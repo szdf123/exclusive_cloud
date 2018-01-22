@@ -1,7 +1,7 @@
 # Summary
 
 * [专属云文档](README.md)
-* [服务治理平台](articles/developer/)
+* [开发者中心](articles/developer/)
   * [产品介绍](articles/developer/1-/)
     * [产品概述](articles/developer/1-/summary.md)
     * [产品优势](articles/developer/1-/advantages.md)
@@ -40,7 +40,7 @@
     * [视频课程](articles/developer/9-/video.md)
   * [最佳实践](articles/developer/10-/)
     * [最佳实践](articles/developer/10-/practices.md)
-* [开发者中心](articles/developer/)
+* [服务治理平台](articles/developer/)
   * [产品介绍](articles/developer/1-/)
     * [产品概述](articles/developer/1-/summary.md)
     * [产品优势](articles/developer/1-/advantages.md)
