@@ -69,7 +69,7 @@
     * [使用说明](articles/developer/6-/instructions.md)
     * [代码示例](articles/developer/6-/codes.md)
   * [API参考](articles/developer/7-/)
-    * [API接口](articles/developer/7-/api_interface-microservice.md)
+    * [API接口](articles/service/7-/api_interface-microservice.md)
   * [常见问题](articles/developer/8-/)
     * [用户场景](articles/developer/8-/user_scenarios.md)
     * [功能问题](articles/developer/8-/functions.md)
