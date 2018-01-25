@@ -194,4 +194,3 @@
     * [视频课程](articles/mdm/9-/video.md)
   * [最佳实践](articles/mdm/10-/)
     * [最佳实践](articles/mdm/10-/practices.md)
-
