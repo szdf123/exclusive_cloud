@@ -16,7 +16,7 @@
 如设置当前用户, 当前链路ID, 大事务ID等. 
 ```
 ```
-注意: 因tomcat等web容器的线程是在线程池内的, 业务设置上下文参数在调用前设置后, 框架不会清理, 业务方要选择合适的时机进行清理, 以避免上下文参数被带入别的线程中.
+注意: 服务消费者在RPC调用时, 因tomcat等web容器的线程是在线程池内的, 业务设置上下文参数在RPC调用前设置, 在调用后框架不会清理, 业务方要选择合适的时机进行清理, 如在调用后清理或线程使用完毕后清理(request范围), 以避免上下文参数被带入别的线程中. 服务提供者不用清理上下文参数, RPC框架会自动清理.
 ```
 
 ## 接口使用说明
@@ -34,11 +34,11 @@
 
 * **上下文参数API使用:**
 
-	1. 客户端设置上下文参数
+	1. 服务消费者设置上下文参数
 		<pre>com.yonyou.iuap.context.InvocationInfoProxy.setParameter("上下文参数键", "上下文参数值");</pre>
-	1. 客户端清理上下文参数
+	1. 服务消费者清理上下文参数
 		<pre>com.yonyou.iuap.context.InvocationInfoProxy.reset();</pre>
-	3. 服务端获取上下文参数
+	3. 服务提供者获取上下文参数
 		<pre>com.yonyou.iuap.context.InvocationInfoProxy.getParameter("上下文参数键");</pre>
 
 
