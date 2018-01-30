@@ -76,7 +76,7 @@
     * [配置中心](articles/service/5-/config.md)
     * [权限管理](articles/service/5-/auth.md)
     * [用户管理](articles/service/5-/auth.md)
-    * [常见问题](articles/service/5-/auth.md)
+    * [常见问题](articles/service/5-/notes.md)
   * [开发指南](articles/service/6-/)
     * [概述](articles/service/6-/overview.md)
     * [整体设计](articles/service/6-/design.md)
