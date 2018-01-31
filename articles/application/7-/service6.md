@@ -1,25 +1,25 @@
-##ÏûÏ¢ÖĞĞÄ
+## åœºæ™¯å…­ï¼šæ¶ˆæ¯ä¸­å¿ƒ
 
-###ÒµÎñĞèÇó
+### ä¸šåŠ¡éœ€æ±‚
 
-ÏûÏ¢ÍÆËÍÖ÷ÒªÓÃ»§ÌáÉıÓÃ»§ÌåÑé£¬±ÜÃâÓÃ»§Ë¢ĞÂÒ³Ãæ´Ó·şÎñÆ÷¶ËÀ­È¡Êı¾İ¡£ÀıÈçÓÊ¼şÌáĞÑ£¬ÖØÒªÍ¨ÖªÄÜ¼´Ê±ÍÆËÍ¸øÓÃ»§£¬Ìá¸ßÓÃ»§ÌåÑé¡£
+æ¶ˆæ¯æ¨é€ä¸»è¦ç”¨æˆ·æå‡ç”¨æˆ·ä½“éªŒï¼Œé¿å…ç”¨æˆ·åˆ·æ–°é¡µé¢ä»æœåŠ¡å™¨ç«¯æ‹‰å–æ•°æ®ã€‚ä¾‹å¦‚é‚®ä»¶æé†’ï¼Œé‡è¦é€šçŸ¥èƒ½å³æ—¶æ¨é€ç»™ç”¨æˆ·ï¼Œæé«˜ç”¨æˆ·ä½“éªŒã€‚
 
-###¹¦ÄÜËµÃ÷
+### åŠŸèƒ½è¯´æ˜
 
-iuap-message×é¼şÌá¹©ÁËÏòÊÖ»ú·¢ËÍ¶ÌĞÅ¡¢·¢ËÍµç×ÓÓÊ¼ş¡¢ÏòAPPÍÆËÍÏûÏ¢µÄ¹¦ÄÜ¡£
+iuap-messageç»„ä»¶æä¾›äº†å‘æ‰‹æœºå‘é€çŸ­ä¿¡ã€å‘é€ç”µå­é‚®ä»¶ã€å‘APPæ¨é€æ¶ˆæ¯çš„åŠŸèƒ½ã€‚
 
-1.Ìá¹©ÁËÏòÊÖ»ú·¢ËÍ¶ÌĞÅ
-2.Ìá¹©ÁË·¢ËÍµç×ÓÓÊ¼ş
-3.µç×ÓÓÊ¼şÖ§³Ö³­ËÍ¡¢ÃÜËÍ
-4.µç×ÓÓÊ¼şÖ§³Ö¸½¼ş·¢ËÍ
-5.Ìá¹©ÁËÏòAPPÍÆËÍÏûÏ¢µÄ¹¦ÄÜ
-6.¿ÉÀ©Õ¹µÄÏûÏ¢·¢ËÍ·½Ê½£»
+1.æä¾›äº†å‘æ‰‹æœºå‘é€çŸ­ä¿¡
+2.æä¾›äº†å‘é€ç”µå­é‚®ä»¶
+3.ç”µå­é‚®ä»¶æ”¯æŒæŠ„é€ã€å¯†é€
+4.ç”µå­é‚®ä»¶æ”¯æŒé™„ä»¶å‘é€
+5.æä¾›äº†å‘APPæ¨é€æ¶ˆæ¯çš„åŠŸèƒ½
+6.å¯æ‰©å±•çš„æ¶ˆæ¯å‘é€æ–¹å¼ï¼›
 
-##ÕûÌåÉè¼Æ
+## æ•´ä½“è®¾è®¡
 
-###ÒÀÀµ»·¾³
+### ä¾èµ–ç¯å¢ƒ
 
-×é¼ş²ÉÓÃMaven½øĞĞ±àÒëºÍ´ò°ü·¢²¼£¬Æä¶ÔÍâÌá¹©µÄÒÀÀµ·½Ê½ÈçÏÂ£º
+ç»„ä»¶é‡‡ç”¨Mavenè¿›è¡Œç¼–è¯‘å’Œæ‰“åŒ…å‘å¸ƒï¼Œå…¶å¯¹å¤–æä¾›çš„ä¾èµ–æ–¹å¼å¦‚ä¸‹ï¼š
 
 1
 <dependency>
@@ -32,115 +32,115 @@ iuap-message×é¼şÌá¹©ÁËÏòÊÖ»ú·¢ËÍ¶ÌĞÅ¡¢·¢ËÍµç×ÓÓÊ¼ş¡¢ÏòAPPÍÆËÍÏûÏ¢µÄ¹¦ÄÜ¡£
 5
 </dependency>
 
-${iuap.modules.version} ÎªÆ½Ì¨ÔÚmavenË½·şÉÏ·¢²¼µÄ×é¼şµÄversion¡£
+${iuap.modules.version} ä¸ºå¹³å°åœ¨mavenç§æœä¸Šå‘å¸ƒçš„ç»„ä»¶çš„versionã€‚
 
-###¹¦ÄÜËµÃ÷
+### åŠŸèƒ½è¯´æ˜
 
-iuap-message×é¼şÌá¹©ÁËÏòÊÖ»ú·¢ËÍ¶ÌĞÅ¡¢·¢ËÍµç×ÓÓÊ¼ş¡¢ÏòAPPÍÆËÍÏûÏ¢µÄ¹¦ÄÜ¡£
+iuap-messageç»„ä»¶æä¾›äº†å‘æ‰‹æœºå‘é€çŸ­ä¿¡ã€å‘é€ç”µå­é‚®ä»¶ã€å‘APPæ¨é€æ¶ˆæ¯çš„åŠŸèƒ½ã€‚
 
-1.ÏûÏ¢ÍÆËÍ 
+1.æ¶ˆæ¯æ¨é€ 
 
-ÔÚ¹«Ë¾ÏÖÓĞµÄÏûÏ¢ÍÆËÍÆ½Ì¨µÄ»ù´¡ÉÏ£¬ÀûÓÃ´ËÆ½Ì¨µÄREST·şÎñ£¬½«ÒµÎñÊı¾İ°ü×°³É·ûºÏÒªÇóµÄ¸ñÊ½£¬·¢ËÍµ½Æ½Ì¨ÉÏ£¬Íê³ÉAPPµÄÍÆËÍ¡££¨ÓÃ»§µÄÒÆ¶¯¶ËÒ²ĞèÒª°²×°Æ½Ì¨Ìá¹©µÄSDK£©
+åœ¨å…¬å¸ç°æœ‰çš„æ¶ˆæ¯æ¨é€å¹³å°çš„åŸºç¡€ä¸Šï¼Œåˆ©ç”¨æ­¤å¹³å°çš„RESTæœåŠ¡ï¼Œå°†ä¸šåŠ¡æ•°æ®åŒ…è£…æˆç¬¦åˆè¦æ±‚çš„æ ¼å¼ï¼Œå‘é€åˆ°å¹³å°ä¸Šï¼Œå®ŒæˆAPPçš„æ¨é€ã€‚ï¼ˆç”¨æˆ·çš„ç§»åŠ¨ç«¯ä¹Ÿéœ€è¦å®‰è£…å¹³å°æä¾›çš„SDKï¼‰
 
-2.·¢ËÍ¶ÌĞÅ 
+2.å‘é€çŸ­ä¿¡ 
 
-·¢ËÍ¶ÌĞÅµÄ¹¦ÄÜÊÇ»ùÓÚ¹«Ë¾µÄ¶ÌĞÅÍÆËÍÆ½Ì¨£¬Í¨¹ı´ËÆ½Ì¨µÄÌá¹©µÄREST·şÎñ£¬°´ÕÕÆ½Ì¨µÄÒªÇó£¬½«Êı¾İ·â×°Ìá½»µ½Æ½Ì¨£¬Íê³É¶ÌĞÅ·¢ËÍÈÎÎñ¡£Ä¿Ç°Ö§³Ö¹úÄÚµÄÒÆ¶¯¡¢ÁªÍ¨ºÍµçĞÅÈı´óÍøÂç¡£
+å‘é€çŸ­ä¿¡çš„åŠŸèƒ½æ˜¯åŸºäºå…¬å¸çš„çŸ­ä¿¡æ¨é€å¹³å°ï¼Œé€šè¿‡æ­¤å¹³å°çš„æä¾›çš„RESTæœåŠ¡ï¼ŒæŒ‰ç…§å¹³å°çš„è¦æ±‚ï¼Œå°†æ•°æ®å°è£…æäº¤åˆ°å¹³å°ï¼Œå®ŒæˆçŸ­ä¿¡å‘é€ä»»åŠ¡ã€‚ç›®å‰æ”¯æŒå›½å†…çš„ç§»åŠ¨ã€è”é€šå’Œç”µä¿¡ä¸‰å¤§ç½‘ç»œã€‚
 
-3.·¢ËÍÓÊ¼ş 
+3.å‘é€é‚®ä»¶ 
 
-µç×ÓÓÊ¼ş·şÎñ£¬ÊÇ»ùÓÚJavaMailÊµÏÖµÄÓÊ¼ş·¢ËÍ·şÎñ£¬Ê¹ÓÃJDKÔ­ÉúµÄjavax.mail×é¼şÀ´Íê³É·¢ËÍÓÊ¼şµÄ·şÎñ¡£
+ç”µå­é‚®ä»¶æœåŠ¡ï¼Œæ˜¯åŸºäºJavaMailå®ç°çš„é‚®ä»¶å‘é€æœåŠ¡ï¼Œä½¿ç”¨JDKåŸç”Ÿçš„javax.mailç»„ä»¶æ¥å®Œæˆå‘é€é‚®ä»¶çš„æœåŠ¡ã€‚
 
-Ö÷Òª¹¤×÷Á÷³ÌÈçÏÂ£º
+ä¸»è¦å·¥ä½œæµç¨‹å¦‚ä¸‹ï¼š
 
-1.ÑéÖ¤µÇÂ¼È¨ÏŞAuthenticator
+1.éªŒè¯ç™»å½•æƒé™Authenticator
 
-2.¸ù¾İÉèÖÃµÄPropertiesºÍAuthenticator´´½¨Ò»¸öSession
+2.æ ¹æ®è®¾ç½®çš„Propertieså’ŒAuthenticatoråˆ›å»ºä¸€ä¸ªSession
 
-3.´´½¨Ò»¸öMimeMessageÊµÀı£¬ÉèÖÃÕâ¸ömessageµÄÊÕĞÅÈË¡¢Ö÷Ìâ¡¢ÄÚÈİµÈ
+3.åˆ›å»ºä¸€ä¸ªMimeMessageå®ä¾‹ï¼Œè®¾ç½®è¿™ä¸ªmessageçš„æ”¶ä¿¡äººã€ä¸»é¢˜ã€å†…å®¹ç­‰
 
-4.·¢ËÍÓÊ¼şTransport.send(message);
+4.å‘é€é‚®ä»¶Transport.send(message);
 
-##Ê¹ÓÃËµÃ÷
+## ä½¿ç”¨è¯´æ˜
 
-###×é¼ş°üËµÃ÷
+### ç»„ä»¶åŒ…è¯´æ˜
 
-iuap-message×é¼şÌá¹©ÁËÏòÊÖ»ú·¢ËÍ¶ÌĞÅ¡¢·¢ËÍµç×ÓÓÊ¼ş¡¢ÏòAPPÍÆËÍÏûÏ¢µÄ¹¦ÄÜ¡£
+iuap-messageç»„ä»¶æä¾›äº†å‘æ‰‹æœºå‘é€çŸ­ä¿¡ã€å‘é€ç”µå­é‚®ä»¶ã€å‘APPæ¨é€æ¶ˆæ¯çš„åŠŸèƒ½ã€‚
 
-###×é¼şÅäÖÃ
+### ç»„ä»¶é…ç½®
 
-½«ÅäÖÃÎÄ¼şmessage-senderInfo.xml(¿ÉÔÚÉÏÎÄÊ¾Àı¹¤³ÌÄÃµ½)·Åµ½¹¤³ÌµÄclasspathÏÂ£¬Èç¹ûÊÇmaven¹¤³Ì£¬·ÅÔÚsrc/main/resourcesÄ¿Â¼ÏÂ¼´¿É
+å°†é…ç½®æ–‡ä»¶message-senderInfo.xml(å¯åœ¨ä¸Šæ–‡ç¤ºä¾‹å·¥ç¨‹æ‹¿åˆ°)æ”¾åˆ°å·¥ç¨‹çš„classpathä¸‹ï¼Œå¦‚æœæ˜¯mavenå·¥ç¨‹ï¼Œæ”¾åœ¨src/main/resourcesç›®å½•ä¸‹å³å¯
 
-###¹¤³ÌÑùÀı
+### å·¥ç¨‹æ ·ä¾‹
 
-ÏûÏ¢ÍÆËÍ×é¼şÌá¹©ÓĞÊ¾Àı¹¤³Ìiuap-message-example£¬ÓÃ»§¿É´Ómaven¿âÉÏÏÂÔØ£¬Ê¾Àı¹¤³ÌÖĞÓĞ½ÏÎªÍêÕûµÄ¶Ôiuap-message×é¼şµÄÊ¹ÓÃÊ¾Àı´úÂë¡£
+æ¶ˆæ¯æ¨é€ç»„ä»¶æä¾›æœ‰ç¤ºä¾‹å·¥ç¨‹iuap-message-exampleï¼Œç”¨æˆ·å¯ä»mavenåº“ä¸Šä¸‹è½½ï¼Œç¤ºä¾‹å·¥ç¨‹ä¸­æœ‰è¾ƒä¸ºå®Œæ•´çš„å¯¹iuap-messageç»„ä»¶çš„ä½¿ç”¨ç¤ºä¾‹ä»£ç ã€‚
 
-###¿ª·¢²½Öè
+### å¼€å‘æ­¥éª¤
 
-¿ÉÖ±½Ó²Î¿¼ÒÔÏÂÊ¾Àı¹¤³Ì£º
+å¯ç›´æ¥å‚è€ƒä»¥ä¸‹ç¤ºä¾‹å·¥ç¨‹ï¼š
 
-1.Ìí¼ÓÅäÖÃÎÄ¼ş£º
+1.æ·»åŠ é…ç½®æ–‡ä»¶ï¼š
 
-½«ÅäÖÃÎÄ¼şmessage-senderInfo.xml(¿ÉÔÚÉÏÎÄÊ¾Àı¹¤³ÌÄÃµ½)·Åµ½¹¤³ÌµÄclasspathÏÂ£¬Èç¹ûÊÇmaven¹¤³Ì£¬·ÅÔÚsrc/main/resourcesÄ¿Â¼ÏÂ¼´¿É
+å°†é…ç½®æ–‡ä»¶message-senderInfo.xml(å¯åœ¨ä¸Šæ–‡ç¤ºä¾‹å·¥ç¨‹æ‹¿åˆ°)æ”¾åˆ°å·¥ç¨‹çš„classpathä¸‹ï¼Œå¦‚æœæ˜¯mavenå·¥ç¨‹ï¼Œæ”¾åœ¨src/main/resourcesç›®å½•ä¸‹å³å¯
 
-2.µ÷ÓÃÏûÏ¢·şÎñµÄ½Ó¿Ú·½·¨£¬·¢ËÍÏûÏ¢:
+2.è°ƒç”¨æ¶ˆæ¯æœåŠ¡çš„æ¥å£æ–¹æ³•ï¼Œå‘é€æ¶ˆæ¯:
 
 1
-// ´´½¨ÏûÏ¢½ÓÊÕÕß
+// åˆ›å»ºæ¶ˆæ¯æ¥æ”¶è€…
 2
 MessageReceiver emailReceivers = new EmailReceiver("username1@domain.com,username2@domain.com");
 3
  
 4
-// ´´½¨ÏûÏ¢ÄÚÈİ
+// åˆ›å»ºæ¶ˆæ¯å†…å®¹
 5
-MessageContent emailContent = new EmailContent("ÎÒÊÇ±êÌâ1", "²âÊÔÄÚÈİ1");
+MessageContent emailContent = new EmailContent("æˆ‘æ˜¯æ ‡é¢˜1", "æµ‹è¯•å†…å®¹1");
 6
  
 7
-// ·¢ËÍÏûÏ¢
+// å‘é€æ¶ˆæ¯
 8
 List<MessageResponse> responseList = new MessageSend(emailReceivers, emailContent).send(); 
 
 
-###³£ÓÃ½Ó¿Ú
+### å¸¸ç”¨æ¥å£
 
-####ÃèÊö 
+#### æè¿° 
 
-¶ÌĞÅ¡¢ÓÊ¼şºÍAPPÏûÏ¢ÍÆËÍ½Ó¿Ú
+çŸ­ä¿¡ã€é‚®ä»¶å’ŒAPPæ¶ˆæ¯æ¨é€æ¥å£
 
-####ÇëÇó·½·¨ 
+#### è¯·æ±‚æ–¹æ³• 
 
 new MessageSend(msgReceivers, msgContent).send();
 
-ÇëÇó²ÎÊıËµÃ÷
+è¯·æ±‚å‚æ•°è¯´æ˜
 
 <table>
    <tr>
-      <td>²ÎÊı×Ö¶Î</td>
+      <td>å‚æ•°å­—æ®µ</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>±ØÑ¡</td>
+      <td>å¿…é€‰</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ÀàĞÍ</td>
+      <td>ç±»å‹</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>³¤¶È</td>
+      <td>é•¿åº¦</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ËµÃ÷</td>
+      <td>è¯´æ˜</td>
    </tr>
    <tr>
       <td></td>
@@ -170,7 +170,7 @@ new MessageSend(msgReceivers, msgContent).send();
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢µÄ½ÓÊÕÕß£¬ÓĞ¶à¸öµÄÊ±ºò£¬°´ÕÕÓ¢ÎÄ¡±,¡±·Ö¸î</td>
+      <td>æ¶ˆæ¯çš„æ¥æ”¶è€…ï¼Œæœ‰å¤šä¸ªçš„æ—¶å€™ï¼ŒæŒ‰ç…§è‹±æ–‡â€,â€åˆ†å‰²</td>
    </tr>
    <tr>
       <td></td>
@@ -200,54 +200,54 @@ new MessageSend(msgReceivers, msgContent).send();
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢ÄÚÈİ£¬°üº¬ÏûÏ¢±êÌâ£¬ÏûÏ¢ÄÚÈİ£¬·¢ËÍÊ±¼ä¡£ÆäÖĞÏûÏ¢±êÌâºÍ·¢ËÍÊ±¼ä·Ç±ØÌî</td>
+      <td>æ¶ˆæ¯å†…å®¹ï¼ŒåŒ…å«æ¶ˆæ¯æ ‡é¢˜ï¼Œæ¶ˆæ¯å†…å®¹ï¼Œå‘é€æ—¶é—´ã€‚å…¶ä¸­æ¶ˆæ¯æ ‡é¢˜å’Œå‘é€æ—¶é—´éå¿…å¡«</td>
    </tr>
    <tr>
       <td></td>
    </tr>
 </table>
 
-1.msgReceiversÏûÏ¢½ÓÊÕÕß¡£¿ÉÒÔÊÇÓÊ¼şµØÖ·£¬»òÕßÊÇµç»°ºÅÂë£¬»òÕßÊÇAPP ID¡£
+1.msgReceiversæ¶ˆæ¯æ¥æ”¶è€…ã€‚å¯ä»¥æ˜¯é‚®ä»¶åœ°å€ï¼Œæˆ–è€…æ˜¯ç”µè¯å·ç ï¼Œæˆ–è€…æ˜¯APP IDã€‚
 
-2.msgContentÏûÏ¢ÄÚÈİ£¬¿ÉÒÔÉèÖÃÏûÏ¢±êÌâ¡¢ÎÄ±¾ÄÚÈİ¡£
+2.msgContentæ¶ˆæ¯å†…å®¹ï¼Œå¯ä»¥è®¾ç½®æ¶ˆæ¯æ ‡é¢˜ã€æ–‡æœ¬å†…å®¹ã€‚
 
-####ÃèÊö
+####æè¿°
 
-¶ÌĞÅ¡¢ÓÊ¼şºÍAPPÍ¨¹ıÏûÏ¢Í¨µÀ·¢ËÍ½Ó¿Ú
+çŸ­ä¿¡ã€é‚®ä»¶å’ŒAPPé€šè¿‡æ¶ˆæ¯é€šé“å‘é€æ¥å£
 
-####ÇëÇó·½·¨
+####è¯·æ±‚æ–¹æ³•
 
 new MessageSend(msgReceivers, msgContent, channel).send();
 
-####ÇëÇó²ÎÊıËµÃ÷
+####è¯·æ±‚å‚æ•°è¯´æ˜
 
 <table>
    <tr>
-      <td>²ÎÊı×Ö¶Î</td>
+      <td>å‚æ•°å­—æ®µ</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>±ØÑ¡</td>
+      <td>å¿…é€‰</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ÀàĞÍ</td>
+      <td>ç±»å‹</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>³¤¶È</td>
+      <td>é•¿åº¦</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ËµÃ÷</td>
+      <td>è¯´æ˜</td>
    </tr>
    <tr>
       <td></td>
@@ -277,7 +277,7 @@ new MessageSend(msgReceivers, msgContent, channel).send();
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢µÄ½ÓÊÕÕß£¬ÓĞ¶à¸öµÄÊ±ºò£¬°´ÕÕÓ¢ÎÄ¡±,¡±·Ö¸î</td>
+      <td>æ¶ˆæ¯çš„æ¥æ”¶è€…ï¼Œæœ‰å¤šä¸ªçš„æ—¶å€™ï¼ŒæŒ‰ç…§è‹±æ–‡â€,â€åˆ†å‰²</td>
    </tr>
    <tr>
       <td></td>
@@ -307,7 +307,7 @@ new MessageSend(msgReceivers, msgContent, channel).send();
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢ÄÚÈİ£¬°üº¬ÏûÏ¢±êÌâ£¬ÏûÏ¢ÄÚÈİ£¬·¢ËÍÊ±¼ä¡£ÆäÖĞÏûÏ¢±êÌâºÍ·¢ËÍÊ±¼ä·Ç±ØÌî</td>
+      <td>æ¶ˆæ¯å†…å®¹ï¼ŒåŒ…å«æ¶ˆæ¯æ ‡é¢˜ï¼Œæ¶ˆæ¯å†…å®¹ï¼Œå‘é€æ—¶é—´ã€‚å…¶ä¸­æ¶ˆæ¯æ ‡é¢˜å’Œå‘é€æ—¶é—´éå¿…å¡«</td>
    </tr>
    <tr>
       <td></td>
@@ -337,7 +337,7 @@ new MessageSend(msgReceivers, msgContent, channel).send();
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢Í¨µÀ±àÂë</td>
+      <td>æ¶ˆæ¯é€šé“ç¼–ç </td>
    </tr>
    <tr>
       <td></td>
@@ -345,72 +345,72 @@ new MessageSend(msgReceivers, msgContent, channel).send();
 </table>
 
 
-1.msgReceivers ÏûÏ¢½ÓÊÕÕß¡£¿ÉÒÔÊÇÓÊ¼şµØÖ·£¬»òÕßÊÇµç»°ºÅÂë£¬»òÕßÊÇAPP ID¡£
+1.msgReceivers æ¶ˆæ¯æ¥æ”¶è€…ã€‚å¯ä»¥æ˜¯é‚®ä»¶åœ°å€ï¼Œæˆ–è€…æ˜¯ç”µè¯å·ç ï¼Œæˆ–è€…æ˜¯APP IDã€‚
 
-2.msgContent ÏûÏ¢ÄÚÈİ£¬¿ÉÒÔÉèÖÃÏûÏ¢±êÌâ¡¢ÎÄ±¾ÄÚÈİ¡£
+2.msgContent æ¶ˆæ¯å†…å®¹ï¼Œå¯ä»¥è®¾ç½®æ¶ˆæ¯æ ‡é¢˜ã€æ–‡æœ¬å†…å®¹ã€‚
 
-3.channel ÏûÏ¢Í¨µÀ±àÂë£¬ĞèÒª×¢²áÏûÏ¢Í¨µÀ£¬¾ßÌå²Î¿¼ÏûÏ¢Í¨µÀÏà¹ØÎÄµµ¡£
+3.channel æ¶ˆæ¯é€šé“ç¼–ç ï¼Œéœ€è¦æ³¨å†Œæ¶ˆæ¯é€šé“ï¼Œå…·ä½“å‚è€ƒæ¶ˆæ¯é€šé“ç›¸å…³æ–‡æ¡£ã€‚
 
-Ö§³ÖÏûÏ¢Í¨µÀµÄÀ©Õ¹£¬À©Õ¹²½ÖèÈçÏÂ£º 
+æ”¯æŒæ¶ˆæ¯é€šé“çš„æ‰©å±•ï¼Œæ‰©å±•æ­¥éª¤å¦‚ä¸‹ï¼š 
 
-(1)Ä¬ÈÏÖ§³Ösms,messagepush,email£¬ÓÃ»§¿ÉÀ©Õ¹×Ô¼ºµÄÏûÏ¢Í¨µÀ£¬ÈôÒªÀ©Õ¹ÏûÏ¢Í¨µÀ£¬ĞèÔÚÅäÖÃÎÄ¼şmessage-senderInfo.propertyÖĞÔö¼Ó×Ô¼ºµÄÏûÏ¢Í¨µÀ,·ÂÕÕÏÂÃæµÄÊ¾ÀıÉèÖÃ²ÎÊı
+(1)é»˜è®¤æ”¯æŒsms,messagepush,emailï¼Œç”¨æˆ·å¯æ‰©å±•è‡ªå·±çš„æ¶ˆæ¯é€šé“ï¼Œè‹¥è¦æ‰©å±•æ¶ˆæ¯é€šé“ï¼Œéœ€åœ¨é…ç½®æ–‡ä»¶message-senderInfo.propertyä¸­å¢åŠ è‡ªå·±çš„æ¶ˆæ¯é€šé“,ä»¿ç…§ä¸‹é¢çš„ç¤ºä¾‹è®¾ç½®å‚æ•°
 
 <msconfig>
 02
-<!-- ¶ÌĞÅ·şÎñ²ÎÊıÅäÖÃ  START-->
+<!-- çŸ­ä¿¡æœåŠ¡å‚æ•°é…ç½®  START-->
 03
   <sms>
 04
-    <corpId></corpId><!-- ÕË»§ID -->
+    <corpId></corpId><!-- è´¦æˆ·ID -->
 05
-    <secretKey></secretKey><!-- ½Ó¿Úµ÷ÓÃÃØÔ¿ -->
+    <secretKey></secretKey><!-- æ¥å£è°ƒç”¨ç§˜é’¥ -->
 06
-    <url>http://umessage.yyuap.com/remote/sendSms.do</url><!-- ¶ÌĞÅ·şÎñÆ÷URL -->
+    <url>http://umessage.yyuap.com/remote/sendSms.do</url><!-- çŸ­ä¿¡æœåŠ¡å™¨URL -->
 07
   </sms>
 08
-<!-- ¶ÌĞÅ·şÎñ²ÎÊıÅäÖÃ  END-->
+<!-- çŸ­ä¿¡æœåŠ¡å‚æ•°é…ç½®  END-->
 09
  
 10
-<!-- ÏûÏ¢ÍÆËÍ²ÎÊıÅäÖÃ  START-->
+<!-- æ¶ˆæ¯æ¨é€å‚æ•°é…ç½®  START-->
 11
   <messagepush>
 12
-    <userName></userName><!-- ÕË»§Ãû(¼´¿ØÖÆÌ¨µÇÂ¼Ãû) -->
+    <userName></userName><!-- è´¦æˆ·å(å³æ§åˆ¶å°ç™»å½•å) -->
 13
-    <userKey></userKey><!-- Ô¶³Ì½Ó¿ÚÃØÔ¿ -->
+    <userKey></userKey><!-- è¿œç¨‹æ¥å£ç§˜é’¥ -->
 14
-    <url>http://upush.yyuap.com/remote/req.do</url><!-- ÏûÏ¢ÍÆËÍ·şÎñÆ÷URL -->
+    <url>http://upush.yyuap.com/remote/req.do</url><!-- æ¶ˆæ¯æ¨é€æœåŠ¡å™¨URL -->
 15
   </messagepush>
 16
-<!-- ÏûÏ¢ÍÆËÍ²ÎÊıÅäÖÃ  END-->
+<!-- æ¶ˆæ¯æ¨é€å‚æ•°é…ç½®  END-->
 17
  
 18
-<!-- ÓÊ¼ş·şÎñ·¢ËÍ²ÎÊıÅäÖÃ  START-->
+<!-- é‚®ä»¶æœåŠ¡å‘é€å‚æ•°é…ç½®  START-->
 19
   <mail>
 20
-    <userName></userName><!-- ÕË»§Ãû(·¢¼şÈËÓÊÏäÕË»§µÄÕËºÅ) -->
+    <userName></userName><!-- è´¦æˆ·å(å‘ä»¶äººé‚®ç®±è´¦æˆ·çš„è´¦å·) -->
 21
-    <password></password><!-- ÃÜÂë(·¢¼şÈËÓÊÏäÕË»§µÄÃÜÂë) -->
+    <password></password><!-- å¯†ç (å‘ä»¶äººé‚®ç®±è´¦æˆ·çš„å¯†ç ) -->
 22
-    <hostName>mail.yonyou.com</hostName><!-- ÓÊ¼ş·¢ËÍ·şÎñÆ÷SMTPµØÖ·URL -->
+    <hostName>mail.yonyou.com</hostName><!-- é‚®ä»¶å‘é€æœåŠ¡å™¨SMTPåœ°å€URL -->
 23
-    <port>25</port><!-- ÓÊ¼ş·¢ËÍ·şÎñÆ÷SMTP¶Ë¿ÚºÅ -->
+    <port>25</port><!-- é‚®ä»¶å‘é€æœåŠ¡å™¨SMTPç«¯å£å· -->
 24
   </mail>
 25
-<!-- ÓÊ¼ş·şÎñ²ÎÊıÅäÖÃ  END-->
+<!-- é‚®ä»¶æœåŠ¡å‚æ•°é…ç½®  END-->
 26
  
 27
 </msconfig>
 
 
-£¨2£©Íê³ÉÏûÏ¢Í¨µÀµÄÊµÏÖÀà£¬ÊµÏÖ½Ó¿Úcom.yonyou.uap.service.IMessageSendChannelExt£¬²¢ÅäÖÃµ½ÎÄ¼şmessage-channelExt.xmlÖĞ¡£
+ï¼ˆ2ï¼‰å®Œæˆæ¶ˆæ¯é€šé“çš„å®ç°ç±»ï¼Œå®ç°æ¥å£com.yonyou.uap.service.IMessageSendChannelExtï¼Œå¹¶é…ç½®åˆ°æ–‡ä»¶message-channelExt.xmlä¸­ã€‚
 
 view sourceprint?
 1
@@ -425,72 +425,72 @@ view sourceprint?
 </MessageSendChannelExt>
 
 
-(3)ÏûÏ¢¾ßÌå²ÎÊıÅäÖÃ¿ÉÒÔÍ¨¹ıÒÔÏÂ·½Ê½»ñÈ¡£º
+(3)æ¶ˆæ¯å…·ä½“å‚æ•°é…ç½®å¯ä»¥é€šè¿‡ä»¥ä¸‹æ–¹å¼è·å–ï¼š
 
 1
 ISenderInfoFetch getEmailSenderInfo = new SenderInfoFetchByXML();
 2
-Map<String, Object> channelInfoMap = getEmailSenderInfo.getSenderInfo(¡°ÏûÏ¢Í¨µÀ±àÂë¡±);
+Map<String, Object> channelInfoMap = getEmailSenderInfo.getSenderInfo(â€œæ¶ˆæ¯é€šé“ç¼–ç â€);
 
-(4)ĞèÒªÔÚÒıÓÃ×é¼şµÄwar°üaplication.xmkÖĞÅäÖÃÒÔÏÂÁ½¸öbean
+(4)éœ€è¦åœ¨å¼•ç”¨ç»„ä»¶çš„waråŒ…aplication.xmkä¸­é…ç½®ä»¥ä¸‹ä¸¤ä¸ªbean
 
 1
 <bean id="senderInfoFetch" class="com.yonyou.uap.message.service.impl.SenderInfoFetchByDB" />
 2
 <bean id="senderInfoFetcher" class="com.yonyou.uap.service.SenderInfoFetcher" />
 
-###À©Õ¹»úÖÆ
+###æ‰©å±•æœºåˆ¶
 
-1.·¢ËÍHTMLÄÚÈİµÄµç×ÓÓÊ¼ş£º 
+1.å‘é€HTMLå†…å®¹çš„ç”µå­é‚®ä»¶ï¼š 
 
-ÔÚÉèÖÃÓÊ¼ş·¢ËÍÄÚÈİÊ±£¬¿ÉÒÔÖ±½Ó±àĞ´HTML´úÂë£¬ÈçÏÂ£º
+åœ¨è®¾ç½®é‚®ä»¶å‘é€å†…å®¹æ—¶ï¼Œå¯ä»¥ç›´æ¥ç¼–å†™HTMLä»£ç ï¼Œå¦‚ä¸‹ï¼š
 
 1
 StringBuffer htmlContent = new StringBuffer();
 2
-htmlContent.append("<h1>ÎÒÊÇ±êÌâ</h1>");
+htmlContent.append("<h1>æˆ‘æ˜¯æ ‡é¢˜</h1>");
 3
-htmlContent.append("<h3>ÆóÒµ»¥ÁªÍøÔËÓªÖ§³ÅÆ½Ì¨</h3>");
+htmlContent.append("<h3>ä¼ä¸šäº’è”ç½‘è¿è¥æ”¯æ’‘å¹³å°</h3>");
 4
 htmlContent.append("<div><img src='http://img4.3lian.com/sucai/img6/230/29.jpg'></div>");
 5
-htmlContent.append("<a href='http://iuap.yonyou.com/'>ÓÃÓÑ¿ª·ÅÆ½Ì¨</a>");
+htmlContent.append("<a href='http://iuap.yonyou.com/'>ç”¨å‹å¼€æ”¾å¹³å°</a>");
 6
-MessageContent mailContent = new EmailContent("HTML Mail²âÊÔ", htmlContent.toString());
+MessageContent mailContent = new EmailContent("HTML Mailæµ‹è¯•", htmlContent.toString());
 
-ÕâÑù¾Í¿ÉÒÔ·¢ËÍHTML¸ñÊ½µÄÓÊ¼ş¡£
+è¿™æ ·å°±å¯ä»¥å‘é€HTMLæ ¼å¼çš„é‚®ä»¶ã€‚
 
-1.Ö§³ÖÓÊ¼ş³­ËÍ£¬ÃÜËÍ£¬·¢ËÍ¸½¼ş
+1.æ”¯æŒé‚®ä»¶æŠ„é€ï¼Œå¯†é€ï¼Œå‘é€é™„ä»¶
 
 MessageContent mailContent = new EmailContent(title, content, copyReceivers, blindCopyReceivers, attachFiles);
 
 <table>
    <tr>
-      <td>²ÎÊı×Ö¶Î</td>
+      <td>å‚æ•°å­—æ®µ</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>±ØÑ¡</td>
+      <td>å¿…é€‰</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ÀàĞÍ</td>
+      <td>ç±»å‹</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>³¤¶È</td>
+      <td>é•¿åº¦</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ËµÃ÷</td>
+      <td>è¯´æ˜</td>
    </tr>
    <tr>
       <td></td>
@@ -520,7 +520,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÓÊ¼şµÄ±êÌâ</td>
+      <td>é‚®ä»¶çš„æ ‡é¢˜</td>
    </tr>
    <tr>
       <td></td>
@@ -550,7 +550,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢ÄÚÈİ</td>
+      <td>æ¶ˆæ¯å†…å®¹</td>
    </tr>
    <tr>
       <td></td>
@@ -580,7 +580,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>³­ËÍÈË£¨¶à¸ö³­ËÍÈËÊ±£¬ÓÃ°ë½ÇÓ¢ÎÄ¶ººÅ·Ö¸ô£©</td>
+      <td>æŠ„é€äººï¼ˆå¤šä¸ªæŠ„é€äººæ—¶ï¼Œç”¨åŠè§’è‹±æ–‡é€—å·åˆ†éš”ï¼‰</td>
    </tr>
    <tr>
       <td></td>
@@ -610,7 +610,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÃÜËÍÈË£¨¶à¸öÃÜËÍÈËÊ±£¬ÓÃ°ë½ÇÓ¢ÎÄ¶ººÅ·Ö¸ô£©</td>
+      <td>å¯†é€äººï¼ˆå¤šä¸ªå¯†é€äººæ—¶ï¼Œç”¨åŠè§’è‹±æ–‡é€—å·åˆ†éš”ï¼‰</td>
    </tr>
    <tr>
       <td></td>
@@ -640,7 +640,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>¸½¼şµÄ±¾µØÂ·¾¶Ãû </td>
+      <td>é™„ä»¶çš„æœ¬åœ°è·¯å¾„å </td>
    </tr>
 </table>
 
@@ -650,31 +650,31 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
 
 <table>
    <tr>
-      <td>²ÎÊı×Ö¶Î</td>
+      <td>å‚æ•°å­—æ®µ</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>±ØÑ¡</td>
+      <td>å¿…é€‰</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ÀàĞÍ</td>
+      <td>ç±»å‹</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>³¤¶È</td>
+      <td>é•¿åº¦</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ËµÃ÷</td>
+      <td>è¯´æ˜</td>
    </tr>
    <tr>
       <td></td>
@@ -704,7 +704,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÓÊ¼şµÄ±êÌâ</td>
+      <td>é‚®ä»¶çš„æ ‡é¢˜</td>
    </tr>
    <tr>
       <td></td>
@@ -734,7 +734,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢ÄÚÈİ</td>
+      <td>æ¶ˆæ¯å†…å®¹</td>
    </tr>
    <tr>
       <td></td>
@@ -764,7 +764,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>³­ËÍÈË£¨¶à¸ö³­ËÍÈËÊ±£¬ÓÃ°ë½ÇÓ¢ÎÄ¶ººÅ·Ö¸ô£©</td>
+      <td>æŠ„é€äººï¼ˆå¤šä¸ªæŠ„é€äººæ—¶ï¼Œç”¨åŠè§’è‹±æ–‡é€—å·åˆ†éš”ï¼‰</td>
    </tr>
    <tr>
       <td></td>
@@ -794,7 +794,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÃÜËÍÈË£¨¶à¸öÃÜËÍÈËÊ±£¬ÓÃ°ë½ÇÓ¢ÎÄ¶ººÅ·Ö¸ô£©</td>
+      <td>å¯†é€äººï¼ˆå¤šä¸ªå¯†é€äººæ—¶ï¼Œç”¨åŠè§’è‹±æ–‡é€—å·åˆ†éš”ï¼‰</td>
    </tr>
    <tr>
       <td></td>
@@ -824,7 +824,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>¸½¼şÖ§³Ö¶ş½øÖÆ·¢ËÍ,Map ±íÊ¾<ÎÄ¼şÃû,¶ÔÓ¦µÄÎÄ¼ş¶ş½øÖÆÁ÷> </td>
+      <td>é™„ä»¶æ”¯æŒäºŒè¿›åˆ¶å‘é€,Map è¡¨ç¤º<æ–‡ä»¶å,å¯¹åº”çš„æ–‡ä»¶äºŒè¿›åˆ¶æµ> </td>
    </tr>
    <tr>
       <td></td>
@@ -837,31 +837,31 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
 
 <table>
    <tr>
-      <td>²ÎÊı×Ö¶Î</td>
+      <td>å‚æ•°å­—æ®µ</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>±ØÑ¡</td>
+      <td>å¿…é€‰</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ÀàĞÍ</td>
+      <td>ç±»å‹</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>³¤¶È</td>
+      <td>é•¿åº¦</td>
    </tr>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>ËµÃ÷</td>
+      <td>è¯´æ˜</td>
    </tr>
    <tr>
       <td></td>
@@ -891,7 +891,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÓÊ¼şµÄ±êÌâ</td>
+      <td>é‚®ä»¶çš„æ ‡é¢˜</td>
    </tr>
    <tr>
       <td></td>
@@ -921,7 +921,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÏûÏ¢ÄÚÈİ</td>
+      <td>æ¶ˆæ¯å†…å®¹</td>
    </tr>
    <tr>
       <td></td>
@@ -951,7 +951,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>³­ËÍÈË£¨¶à¸ö³­ËÍÈËÊ±£¬ÓÃ°ë½ÇÓ¢ÎÄ¶ººÅ·Ö¸ô£©</td>
+      <td>æŠ„é€äººï¼ˆå¤šä¸ªæŠ„é€äººæ—¶ï¼Œç”¨åŠè§’è‹±æ–‡é€—å·åˆ†éš”ï¼‰</td>
    </tr>
    <tr>
       <td></td>
@@ -981,7 +981,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>ÃÜËÍÈË£¨¶à¸öÃÜËÍÈËÊ±£¬ÓÃ°ë½ÇÓ¢ÎÄ¶ººÅ·Ö¸ô£©</td>
+      <td>å¯†é€äººï¼ˆå¤šä¸ªå¯†é€äººæ—¶ï¼Œç”¨åŠè§’è‹±æ–‡é€—å·åˆ†éš”ï¼‰</td>
    </tr>
    <tr>
       <td></td>
@@ -1011,7 +1011,7 @@ MessageContent mailContent = new EmailContent(title, content, copyReceivers, bli
       <td></td>
    </tr>
    <tr>
-      <td>Í¨¹ıurlµØÖ·µÄĞÎÊÆ·¢ËÍ¸½¼ş </td>
+      <td>é€šè¿‡urlåœ°å€çš„å½¢åŠ¿å‘é€é™„ä»¶ </td>
    </tr>
    <tr>
       <td></td>
