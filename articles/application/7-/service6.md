@@ -25,18 +25,13 @@ iuap-message组件提供了向手机发送短信、发送电子邮件、向APP�
 ### 依赖环境
 
 组件采用Maven进行编译和打包发布，其对外提供的依赖方式如下：
-
-1
-<dependency>
-2
-  <groupId>com.yonyou.iuap</groupId>
-3
-  <artifactId>iuap-message</artifactId>
-4
-  <version>${iuap.modules.version}</version>
-5
-</dependency>
-
+<pre>
+1<dependency>
+2<groupId>com.yonyou.iuap</groupId>
+3<artifactId>iuap-message</artifactId>
+4 <version>${iuap.modules.version}</version>
+5</dependency>
+</pre>
 ${iuap.modules.version} 为平台在maven私服上发布的组件的version。
 
 ### 功能说明
