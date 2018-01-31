@@ -37,7 +37,7 @@ http://localhost:8080/iuap-dispatch-service/dispatchserver/add.do”
 
 ### 通过界面进行任务调度
 
-将组件war包部署到服务器上访问首页http://IP:PORT/iuap-dispatch-service进行任务的添加.
+将组件war包部署到服务器上访问首页http://IP:PORT/iuap-dispatch-service 进行任务的添加.
 
 #### 任务列表界面
 
