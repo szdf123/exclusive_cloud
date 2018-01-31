@@ -1,451 +1,453 @@
-##³¡¾°ËÄ:¶¨Ê±ÈÎÎñ
-###¼ò½é
-iuap-dispatch-service×é¼þ¹¦ÄÜ°üÀ¨Ìí¼Ó¡¢É¾³ý¡¢ÔÝÍ£¡¢ÖØÆôÈÎÎñ¡£²»½öÌá¹©ÁËÍâ²¿µ÷ÓÃµÄRest·þÎñ£¬²¢ÇÒ±¾ÉíÒ²ÓÐÍêÕûµÄÈÎÎñÅäÖÃ½çÃæ£¬
-°üÀ¨ÈÎÎñµ÷¶È£¬ÈÕÖ¾²éÑ¯µÈ¹¦ÄÜ¡£
 
-###Êý¾Ý¿âÐÅÏ¢Ô¤ÖÃ
-1.Ö´ÐÐÊý¾Ý¿â½Å±¾£¬Ô¤ÖÃÊý¾Ý¿â±íÐÅÏ¢
+## åœºæ™¯å››:å®šæ—¶ä»»åŠ¡
 
-ÒÀ´ÎÖ´ÐÐexamplesÏîÄ¿ÏÂsqlÄ¿Â¼ÖÐµÄdll.sql¡¢index.sql¡¢dml.sql½¨Á¢Êý¾Ý¿â²¢³õÊ¼»¯Êý¾Ý¡£
-Ô¤ÖÃÊý¾Ý¿â±ídispatch_taskwayµÄÐÅÏ¢£¬ÕâÕÅ±íÊÇÓÃ»§ÒªÖ´ÐÐÈÎÎñµÄÇåµ¥£¬ÐèÒªÓÃ»§Ô¤ÖÃ½øÈ¥£¬ÆäÖÐurlÊÇÖ¸ÄãÒªÖ´ÐÐµÄ¶¨Ê±ÈÎÎñ£¬Í¨¹ýHTTPµÄ·½Ê½·ÃÎÊ¡£
+### ç®€ä»‹
+iuap-dispatch-serviceç»„ä»¶åŠŸèƒ½åŒ…æ‹¬æ·»åŠ ã€åˆ é™¤ã€æš‚åœã€é‡å¯ä»»åŠ¡ã€‚ä¸ä»…æä¾›äº†å¤–éƒ¨è°ƒç”¨çš„RestæœåŠ¡ï¼Œå¹¶ä¸”æœ¬èº«ä¹Ÿæœ‰å®Œæ•´çš„ä»»åŠ¡é…ç½®ç•Œé¢ï¼Œ
+åŒ…æ‹¬ä»»åŠ¡è°ƒåº¦ï¼Œæ—¥å¿—æŸ¥è¯¢ç­‰åŠŸèƒ½ã€‚
 
-###ÈÎÎñµ÷¶ÈÌá¹©Á½ÖÖ·½Ê½ÈçÏÂ
+### æ•°æ®åº“ä¿¡æ¯é¢„ç½®
+1.æ‰§è¡Œæ•°æ®åº“è„šæœ¬ï¼Œé¢„ç½®æ•°æ®åº“è¡¨ä¿¡æ¯
+
+ä¾æ¬¡æ‰§è¡Œexamplesé¡¹ç›®ä¸‹sqlç›®å½•ä¸­çš„dll.sqlã€index.sqlã€dml.sqlå»ºç«‹æ•°æ®åº“å¹¶åˆå§‹åŒ–æ•°æ®ã€‚
+é¢„ç½®æ•°æ®åº“è¡¨dispatch_taskwayçš„ä¿¡æ¯ï¼Œè¿™å¼ è¡¨æ˜¯ç”¨æˆ·è¦æ‰§è¡Œä»»åŠ¡çš„æ¸…å•ï¼Œéœ€è¦ç”¨æˆ·é¢„ç½®è¿›åŽ»ï¼Œå…¶ä¸­urlæ˜¯æŒ‡ä½ è¦æ‰§è¡Œçš„å®šæ—¶ä»»åŠ¡ï¼Œé€šè¿‡HTTPçš„æ–¹å¼è®¿é—®ã€‚
+
+### ä»»åŠ¡è°ƒåº¦æä¾›ä¸¤ç§æ–¹å¼å¦‚ä¸‹
 
 1.
-ÐÂ½¨ÈÎÎñRest½Ó¿Ú
+æ–°å»ºä»»åŠ¡RestæŽ¥å£
 
-A¡¢ÐÂÔöÒ»¸ö¼òµ¥ÈÎÎñ
+Aã€æ–°å¢žä¸€ä¸ªç®€å•ä»»åŠ¡
 
-(1)Rest·þÎñURL 
+(1)RestæœåŠ¡URL 
 
-¡°http://localhost:8080/iuap-dispatch-service/dispatchserver/add.do¡± 
+â€œhttp://localhost:8080/iuap-dispatch-service/dispatchserver/add.doâ€ 
 
-(2)²ÎÊý,¸ñÊ½ÈçÏÂ
+(2)å‚æ•°,æ ¼å¼å¦‚ä¸‹
 
 {"replace":true,"recallConfig":{"data":{},"option":{"url":"http://localhost:8080/iuap-dispatch-service/dispatchserver/pause.do"},"recallType":"HTTP"},"taskConfig":{"triggerType":"SimpleTrigger","jobCode":"22b511e8-1b80-4f4d-b65e-48f52d8aa682","groupCode":"simpleTaskGroup","startDate":1463813876403,"endDate":null,"priority":0,"timeConfig":{"interval":2,"intervalType":"SECOND","isForever":false,"repeatCount":1}}};
 
-B¡¢ÐÂÔöÒ»¸öCron±í´ïÊ½ÈÎÎñ
+Bã€æ–°å¢žä¸€ä¸ªCronè¡¨è¾¾å¼ä»»åŠ¡
 
-(1)Rest·þÎñURL 
+(1)RestæœåŠ¡URL 
 
-http://localhost:8080/iuap-dispatch-service/dispatchserver/add.do¡±
+http://localhost:8080/iuap-dispatch-service/dispatchserver/add.doâ€
 
-(2)²ÎÊý,¸ñÊ½ÈçÏÂ
+(2)å‚æ•°,æ ¼å¼å¦‚ä¸‹
 
 {\"replace\":true, \"recallConfig\":{\"data\":{\"serverName\":\"Windows 2003\"},\"option\":{\"url\":\"http://localhost:8080/iuap-dispatch-service/dispatchserver/pause.do\"},\"recallType\":\"HTTP\"}, \"taskConfig\":{\"cronExpress\":\"* */1 * * * ?\",\"groupCode\":\"cronTaskGroup\",\"jobCode\":\"cronTask\",\"priority\":0,\"triggerType\":\"CronTrigger\"}}";
 
-###Í¨¹ý½çÃæ½øÐÐÈÎÎñµ÷¶È
+### é€šè¿‡ç•Œé¢è¿›è¡Œä»»åŠ¡è°ƒåº¦
 
-½«×é¼þwar°ü²¿Êðµ½·þÎñÆ÷ÉÏ·ÃÎÊÊ×Ò³http://IP:PORT/iuap-dispatch-service½øÐÐÈÎÎñµÄÌí¼Ó.
+å°†ç»„ä»¶waråŒ…éƒ¨ç½²åˆ°æœåŠ¡å™¨ä¸Šè®¿é—®é¦–é¡µhttp://IP:PORT/iuap-dispatch-serviceè¿›è¡Œä»»åŠ¡çš„æ·»åŠ .
 
-####ÈÎÎñÁÐ±í½çÃæ
+#### ä»»åŠ¡åˆ—è¡¨ç•Œé¢
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 
 ![](/articles/application/7-/images/7-4-1.png)
 
-²Ù×÷ËµÃ÷
+æ“ä½œè¯´æ˜Ž
 
-¿ÉÒÔÐÂÔö·Ö×é¡¢ÐÂÔöÈÎÎñ¡¢²é¿´ÈÕÖ¾¡¢¶ÔÈÎÎñ½øÐÐÅúÁ¿µÄÆôÓÃÍ£ÓÃ¡£
+å¯ä»¥æ–°å¢žåˆ†ç»„ã€æ–°å¢žä»»åŠ¡ã€æŸ¥çœ‹æ—¥å¿—ã€å¯¹ä»»åŠ¡è¿›è¡Œæ‰¹é‡çš„å¯ç”¨åœç”¨ã€‚
 
-½çÃæËµÃ÷ÈçÏÂ
+ç•Œé¢è¯´æ˜Žå¦‚ä¸‹
 
-×ó²àÎªÈÎÎñ·Ö×é
-ÓÒ²àÎª·Ö×éÏÂµÄÈÎÎñÁÐ±í½çÃæ£¬ÈÎÎñ»á¸ù¾Ý×´Ì¬ÏÔÊ¾Îª²»Í¬µÄÑÕÉ«¡£×î²é¿´ÈÎÎñ¡¢²é¿´ÈÎÎñÈÕÖ¾¡¢É¾³ýÈÎÎñµÈ²Ù×÷¡£Êó±êÐüÍ£Ê±£¬Î´³¬ÆÚÈÎÎñÏÔÊ¾Í£ÓÃ¡¢ÆôÓÃ²Ù×÷°´Å¥£¬
+å·¦ä¾§ä¸ºä»»åŠ¡åˆ†ç»„
+å³ä¾§ä¸ºåˆ†ç»„ä¸‹çš„ä»»åŠ¡åˆ—è¡¨ç•Œé¢ï¼Œä»»åŠ¡ä¼šæ ¹æ®çŠ¶æ€æ˜¾ç¤ºä¸ºä¸åŒçš„é¢œè‰²ã€‚æœ€æŸ¥çœ‹ä»»åŠ¡ã€æŸ¥çœ‹ä»»åŠ¡æ—¥å¿—ã€åˆ é™¤ä»»åŠ¡ç­‰æ“ä½œã€‚é¼ æ ‡æ‚¬åœæ—¶ï¼Œæœªè¶…æœŸä»»åŠ¡æ˜¾ç¤ºåœç”¨ã€å¯ç”¨æ“ä½œæŒ‰é’®ï¼Œ
 
-###ÐÂÔöÈÎÎñ·Ö×é
+### æ–°å¢žä»»åŠ¡åˆ†ç»„
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 
 
 ![](/articles/application/7-/images/7-4-2.png)
 
-²Ù×÷ËµÃ÷£ºÔÚÖ÷½çÃæÉÏµã»÷½çÃæ×óÉÏ½ÇÐÂ½¨·Ö×é°´Å¥¡£µ¯³ö½çÃæ£¬ÌîÐ´ºó±£´æ¡£
+æ“ä½œè¯´æ˜Žï¼šåœ¨ä¸»ç•Œé¢ä¸Šç‚¹å‡»ç•Œé¢å·¦ä¸Šè§’æ–°å»ºåˆ†ç»„æŒ‰é’®ã€‚å¼¹å‡ºç•Œé¢ï¼Œå¡«å†™åŽä¿å­˜ã€‚
 
-½çÃæËµÃ÷ÈçÏÂ£º
+ç•Œé¢è¯´æ˜Žå¦‚ä¸‹ï¼š
 
-·Ö×éÃû³Æ£º·Ö×éµÄ±êÊ¶
+åˆ†ç»„åç§°ï¼šåˆ†ç»„çš„æ ‡è¯†
 
-###ÐÂÔöÈÎÎñ
+### æ–°å¢žä»»åŠ¡
 
-½çÃæÈçÏÂÍ¼ËùÊ¾
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤º
 
 
 ![](/articles/application/7-/images/7-4-3.png)
 
-²Ù×÷ËµÃ÷£ºÔÚÖ÷½çÃæÉÏµã»÷½çÃæ×óÉÏ½ÇÐÂ½¨ÈÎÎñ°´Å¥¡£µ¯³öÈÎÎñ±à¼­½çÃæ£¬ÌîÐ´ºó±£´æ¡£
+æ“ä½œè¯´æ˜Žï¼šåœ¨ä¸»ç•Œé¢ä¸Šç‚¹å‡»ç•Œé¢å·¦ä¸Šè§’æ–°å»ºä»»åŠ¡æŒ‰é’®ã€‚å¼¹å‡ºä»»åŠ¡ç¼–è¾‘ç•Œé¢ï¼Œå¡«å†™åŽä¿å­˜ã€‚
 
-½çÃæËµÃ÷ÈçÏÂ£º
+ç•Œé¢è¯´æ˜Žå¦‚ä¸‹ï¼š
 
-1.ÈÎÎñ±àÂë£ºÈÎÎñµÄ±êÊ¶
+1.ä»»åŠ¡ç¼–ç ï¼šä»»åŠ¡çš„æ ‡è¯†
 
-2.ÈÎÎñÃû³Æ£º¾ßÓÐÊ¶±ðÒâË¼µÄÃû×Ö
+2.ä»»åŠ¡åç§°ï¼šå…·æœ‰è¯†åˆ«æ„æ€çš„åå­—
 
-3.ÈÎÎñ·Ö×é£ºÖ¸¶¨ÈÎÎñËùÊôµÄ×é
+3.ä»»åŠ¡åˆ†ç»„ï¼šæŒ‡å®šä»»åŠ¡æ‰€å±žçš„ç»„
 
-4.ÏûÏ¢½ÓÊÕ£ºÅäÖÃÈÎÎñ³É¹¦ºó·¢ËÍÏûÏ¢µÄ½ÓÊÕÈËºÍ½ÓÊÕ·½Ê½£¨ÐèÒªÀ©Õ¹ÊµÏÖÏûÏ¢·¢ËÍÂß¼­)
+4.æ¶ˆæ¯æŽ¥æ”¶ï¼šé…ç½®ä»»åŠ¡æˆåŠŸåŽå‘é€æ¶ˆæ¯çš„æŽ¥æ”¶äººå’ŒæŽ¥æ”¶æ–¹å¼ï¼ˆéœ€è¦æ‰©å±•å®žçŽ°æ¶ˆæ¯å‘é€é€»è¾‘)
 
-5.¶¨Ê±¹æÔò£ºÈÎÎñ¾ßÌåÖ´ÐÐÊ±¼ä£¬Ã¿¶àÉÙÌìÖ´ÐÐÒ»´Î£¬²¢Ö¸¶¨¿ªÊ¼Ê±¼ä
+5.å®šæ—¶è§„åˆ™ï¼šä»»åŠ¡å…·ä½“æ‰§è¡Œæ—¶é—´ï¼Œæ¯å¤šå°‘å¤©æ‰§è¡Œä¸€æ¬¡ï¼Œå¹¶æŒ‡å®šå¼€å§‹æ—¶é—´
 
-6.µ÷ÓÃ¹æÔò£ºÖ¸¶¨ÒªÖ´ÐÐµÄÈÎÎñ£¬¾ßÌå¹æÔòÏê¼ûÏÂÃæÔ¤ÖÆÊý¾ÝËµÃ÷¡£
+6.è°ƒç”¨è§„åˆ™ï¼šæŒ‡å®šè¦æ‰§è¡Œçš„ä»»åŠ¡ï¼Œå…·ä½“è§„åˆ™è¯¦è§ä¸‹é¢é¢„åˆ¶æ•°æ®è¯´æ˜Žã€‚
 
-7.²ÎÊý£ºÈÎÎñÖ´ÐÐÊ±£¬»á¸ù¾ÝÖ¸¶¨µÄ²ÎÊýÖµµ÷ÓÃÒµÎñ·þÎñ¡£
+7.å‚æ•°ï¼šä»»åŠ¡æ‰§è¡Œæ—¶ï¼Œä¼šæ ¹æ®æŒ‡å®šçš„å‚æ•°å€¼è°ƒç”¨ä¸šåŠ¡æœåŠ¡ã€‚
 
-¶¨Ê±¹æÔò½çÃæÈçÏÂÍ¼ËùÊ¾£º
+å®šæ—¶è§„åˆ™ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![](/articles/application/7-/images/7-4-4.png)
 
-½çÃæËµÃ÷ÈçÏÂ£º
+ç•Œé¢è¯´æ˜Žå¦‚ä¸‹ï¼š
 
-1.Ö§³ÖÖ¸¶¨ÈÎÎñ¿ªÊ¼½áÊøÊ±¼ä
+1.æ”¯æŒæŒ‡å®šä»»åŠ¡å¼€å§‹ç»“æŸæ—¶é—´
 
-2.Ö§³ÖÖ¸¶¨Ã¿Ìì¡¢Ã¿ÖÜ£¨¿ÉÑ¡ÔñÖÜ¼¸£©¡¢Ã¿ÔÂµÚ¼¸ÌìÖ´ÐÐÈÎÎñ
+2.æ”¯æŒæŒ‡å®šæ¯å¤©ã€æ¯å‘¨ï¼ˆå¯é€‰æ‹©å‘¨å‡ ï¼‰ã€æ¯æœˆç¬¬å‡ å¤©æ‰§è¡Œä»»åŠ¡
 
-3.Ö§³ÖÔÚÉÏÃæÑ¡ÔñµÄÈÕÆÚÒ»ÌìÄÚ£¬Ö¸¶¨·¢Éú´ÎÊý¡¢¼ä¸ôÊ±¼äºÍÆðÖ¹Ê±¼ä
+3.æ”¯æŒåœ¨ä¸Šé¢é€‰æ‹©çš„æ—¥æœŸä¸€å¤©å†…ï¼ŒæŒ‡å®šå‘ç”Ÿæ¬¡æ•°ã€é—´éš”æ—¶é—´å’Œèµ·æ­¢æ—¶é—´
 
-###²é¿´ÈÎÎñÏêÇé
+### æŸ¥çœ‹ä»»åŠ¡è¯¦æƒ…
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 
 ![](/articles/application/7-/images/7-4-5.png)
 
-²Ù×÷ËµÃ÷£ºµã»÷Ö÷½çÃæÁÐ±íµÄÊý¾ÝÐÐÓÒ²à²é¿´ÈÎÎñÏêÇéÍ¼±ê¡£µ¯³öÈÎÎñÏêÇé½çÃæ¡£
+æ“ä½œè¯´æ˜Žï¼šç‚¹å‡»ä¸»ç•Œé¢åˆ—è¡¨çš„æ•°æ®è¡Œå³ä¾§æŸ¥çœ‹ä»»åŠ¡è¯¦æƒ…å›¾æ ‡ã€‚å¼¹å‡ºä»»åŠ¡è¯¦æƒ…ç•Œé¢ã€‚
 
-½çÃæËµÃ÷ÈçÏÂ£º
+ç•Œé¢è¯´æ˜Žå¦‚ä¸‹ï¼š
 
-1.×ó²àÏÔÊ¾ÈÎÎñµÄÃû³ÆºÍÖ´ÐÐÇé¿ö
+1.å·¦ä¾§æ˜¾ç¤ºä»»åŠ¡çš„åç§°å’Œæ‰§è¡Œæƒ…å†µ
 
-2.ÓÒ²àÏÔÊ¾ÈÎÎñµÄÏêÏ¸ÐÅÏ¢
+2.å³ä¾§æ˜¾ç¤ºä»»åŠ¡çš„è¯¦ç»†ä¿¡æ¯
 
-3.±à¼­£º½øÈëÈÎÎñ±à¼­½çÃæ
+3.ç¼–è¾‘ï¼šè¿›å…¥ä»»åŠ¡ç¼–è¾‘ç•Œé¢
 
-4.ÈÕÖ¾£º½øÈëÈÕÖ¾²é¿´½çÃæ£¬ÏÔÊ¾µ±Ç°ÈÎÎñµÄÈÕÖ¾
+4.æ—¥å¿—ï¼šè¿›å…¥æ—¥å¿—æŸ¥çœ‹ç•Œé¢ï¼Œæ˜¾ç¤ºå½“å‰ä»»åŠ¡çš„æ—¥å¿—
 
-###ÐÞ¸ÄÈÎÎñ
+### ä¿®æ”¹ä»»åŠ¡
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![](/articles/application/7-/images/7-4-6.png)
 
-²Ù×÷ËµÃ÷£ºÔÚÖ÷½çÃæÁÐ±íµÄÊý¾ÝÐÐÓÒ²àµã»÷±à¼­ÈÎÎñÍ¼±ê¡£µ¯³öÈÎÎñ±à¼­½çÃæ£¬ÌîÐ´ºó±£´æ¡£
+æ“ä½œè¯´æ˜Žï¼šåœ¨ä¸»ç•Œé¢åˆ—è¡¨çš„æ•°æ®è¡Œå³ä¾§ç‚¹å‡»ç¼–è¾‘ä»»åŠ¡å›¾æ ‡ã€‚å¼¹å‡ºä»»åŠ¡ç¼–è¾‘ç•Œé¢ï¼Œå¡«å†™åŽä¿å­˜ã€‚
 
-½çÃæËµÃ÷ÈçÏÂ£º
+ç•Œé¢è¯´æ˜Žå¦‚ä¸‹ï¼š
 
-1.ÈÎÎñ±àÂë£ºÈÎÎñµÄ±êÊ¶
-2.ÈÎÎñÃû³Æ£º¾ßÓÐÊ¶±ðÒâË¼µÄÃû×Ö
-3.ÈÎÎñ·Ö×é£ºÖ¸¶¨ÈÎÎñËùÊôµÄ×é
-4.ÏûÏ¢½ÓÊÕ£ºÅäÖÃÈÎÎñ³É¹¦ºó·¢ËÍÏûÏ¢µÄ½ÓÊÕÈËºÍ½ÓÊÕ·½Ê½£¨ÐèÒªÀ©Õ¹ÊµÏÖÏûÏ¢·¢ËÍÂß¼­£©¡£
-5.¶¨Ê±¹æÔò£ºÈÎÎñ¾ßÌåÖ´ÐÐÊ±¼ä£¬Ã¿¶àÉÙÌìÖ´ÐÐÒ»´Î£¬²¢Ö¸¶¨¿ªÊ¼Ê±¼ä
-6.µ÷ÓÃ¹æÔò£ºÖ¸¶¨ÒªÖ´ÐÐµÄÈÎÎñ£¬¾ßÌå¹æÔòÏê¼ûÏÂÃæÔ¤ÖÆÊý¾ÝËµÃ÷¡£
-7.²ÎÊý£ºÈÎÎñÖ´ÐÐÊ±£¬»á¸ù¾ÝÖ¸¶¨µÄ²ÎÊýÖµµ÷ÓÃÒµÎñ·þÎñ¡£
+1.ä»»åŠ¡ç¼–ç ï¼šä»»åŠ¡çš„æ ‡è¯†
+2.ä»»åŠ¡åç§°ï¼šå…·æœ‰è¯†åˆ«æ„æ€çš„åå­—
+3.ä»»åŠ¡åˆ†ç»„ï¼šæŒ‡å®šä»»åŠ¡æ‰€å±žçš„ç»„
+4.æ¶ˆæ¯æŽ¥æ”¶ï¼šé…ç½®ä»»åŠ¡æˆåŠŸåŽå‘é€æ¶ˆæ¯çš„æŽ¥æ”¶äººå’ŒæŽ¥æ”¶æ–¹å¼ï¼ˆéœ€è¦æ‰©å±•å®žçŽ°æ¶ˆæ¯å‘é€é€»è¾‘ï¼‰ã€‚
+5.å®šæ—¶è§„åˆ™ï¼šä»»åŠ¡å…·ä½“æ‰§è¡Œæ—¶é—´ï¼Œæ¯å¤šå°‘å¤©æ‰§è¡Œä¸€æ¬¡ï¼Œå¹¶æŒ‡å®šå¼€å§‹æ—¶é—´
+6.è°ƒç”¨è§„åˆ™ï¼šæŒ‡å®šè¦æ‰§è¡Œçš„ä»»åŠ¡ï¼Œå…·ä½“è§„åˆ™è¯¦è§ä¸‹é¢é¢„åˆ¶æ•°æ®è¯´æ˜Žã€‚
+7.å‚æ•°ï¼šä»»åŠ¡æ‰§è¡Œæ—¶ï¼Œä¼šæ ¹æ®æŒ‡å®šçš„å‚æ•°å€¼è°ƒç”¨ä¸šåŠ¡æœåŠ¡ã€‚
 
-###É¾³ýÈÎÎñ
+### åˆ é™¤ä»»åŠ¡
 
-²Ù×÷ËµÃ÷£ºÔÚÖ÷½çÃæÁÐ±íµÄÊý¾ÝÐÐÓÒ²àµã»÷É¾³ýÈÎÎñÍ¼±ê¡£
+æ“ä½œè¯´æ˜Žï¼šåœ¨ä¸»ç•Œé¢åˆ—è¡¨çš„æ•°æ®è¡Œå³ä¾§ç‚¹å‡»åˆ é™¤ä»»åŠ¡å›¾æ ‡ã€‚
 
-###ÆôÓÃÈÎÎñ
+### å¯ç”¨ä»»åŠ¡
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 
 ![](/articles/application/7-/images/7-4-7.png)
 
-²Ù×÷ËµÃ÷£ºÊó±êÑ¡ÔñÒÑÍ£ÓÃµÄÈÎÎñÊ±£¬ÁÐ±íÐÐÏÔÊ¾ÆôÓÃ°´Å¥¡£µã»÷°´Å¥ÆôÓÃ¸ÃÈÎÎñ¡£
+æ“ä½œè¯´æ˜Žï¼šé¼ æ ‡é€‰æ‹©å·²åœç”¨çš„ä»»åŠ¡æ—¶ï¼Œåˆ—è¡¨è¡Œæ˜¾ç¤ºå¯ç”¨æŒ‰é’®ã€‚ç‚¹å‡»æŒ‰é’®å¯ç”¨è¯¥ä»»åŠ¡ã€‚
 
-###Í£ÓÃÈÎÎñ
+### åœç”¨ä»»åŠ¡
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 
 ![](/articles/application/7-/images/7-4-8.png)
 
-²Ù×÷ËµÃ÷£ºÊó±êÑ¡ÔñÕýÔÚÔËÐÐÖÐµÄÈÎÎñÊ±£¬ÁÐ±íÐÐÏÔÊ¾Í£ÓÃ°´Å¥¡£µã»÷°´Å¥Í£ÓÃ¸ÃÈÎÎñ¡£
+æ“ä½œè¯´æ˜Žï¼šé¼ æ ‡é€‰æ‹©æ­£åœ¨è¿è¡Œä¸­çš„ä»»åŠ¡æ—¶ï¼Œåˆ—è¡¨è¡Œæ˜¾ç¤ºåœç”¨æŒ‰é’®ã€‚ç‚¹å‡»æŒ‰é’®åœç”¨è¯¥ä»»åŠ¡ã€‚
 
-###ÅúÁ¿²Ù×÷ÈÎÎñ
+### æ‰¹é‡æ“ä½œä»»åŠ¡
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 
 ![](/articles/application/7-/images/7-4-9.png)
 
-²Ù×÷ËµÃ÷£ºµã»÷¶àÑ¡°´Å¥Ê±£¬»á»¬³öÆôÓÃ¡¢Í£ÓÃ¡¢É¾³ý°´Å¥¡£ÁÐ±í½çÃæÇÐ»»Îª¶àÑ¡×´Ì¬£¬Ñ¡Ôñ¶à¸öÈÎÎñºó£¬µã»÷°´Å¥½øÐÐ²Ù×÷¡£µã»÷¶àÑ¡»Øµ½Ô­ÓÐ×´Ì¬¡£
+æ“ä½œè¯´æ˜Žï¼šç‚¹å‡»å¤šé€‰æŒ‰é’®æ—¶ï¼Œä¼šæ»‘å‡ºå¯ç”¨ã€åœç”¨ã€åˆ é™¤æŒ‰é’®ã€‚åˆ—è¡¨ç•Œé¢åˆ‡æ¢ä¸ºå¤šé€‰çŠ¶æ€ï¼Œé€‰æ‹©å¤šä¸ªä»»åŠ¡åŽï¼Œç‚¹å‡»æŒ‰é’®è¿›è¡Œæ“ä½œã€‚ç‚¹å‡»å¤šé€‰å›žåˆ°åŽŸæœ‰çŠ¶æ€ã€‚
 
-###²é¿´ÈÎÎñÖ´ÐÐÈÕÖ¾
+### æŸ¥çœ‹ä»»åŠ¡æ‰§è¡Œæ—¥å¿—
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![](/articles/application/7-/images/7-4-10.png)
 
-²Ù×÷ËµÃ÷£º
+æ“ä½œè¯´æ˜Žï¼š
 
-1.µã»÷Ö÷½çÃæ×óÉÏ½ÇµÄ¡°ÈÕÖ¾¡±°´Å¥£¬ÏÔÊ¾È«²¿ÈÎÎñÈÕÖ¾
+1.ç‚¹å‡»ä¸»ç•Œé¢å·¦ä¸Šè§’çš„â€œæ—¥å¿—â€æŒ‰é’®ï¼Œæ˜¾ç¤ºå…¨éƒ¨ä»»åŠ¡æ—¥å¿—
 
-2.µã»÷ÈÎÎñÏêÇé½çÃæµÄ¡°ÈÕÖ¾¡±°´Å¥£¬ÏÔÊ¾µ±Ç°ÈÎÎñµÄÈÕÖ¾
+2.ç‚¹å‡»ä»»åŠ¡è¯¦æƒ…ç•Œé¢çš„â€œæ—¥å¿—â€æŒ‰é’®ï¼Œæ˜¾ç¤ºå½“å‰ä»»åŠ¡çš„æ—¥å¿—
 
-3.ÔÚÈÕÖ¾½çÃæµÄ×óÉÏ½Ç¿ÉÒÔÑ¡ÔñÒª²éÑ¯µÄÈÎÎñ£¬Ñ¡Ôñºó£¬¸ù¾ÝÖ¸¶¨µÄÈÎÎñ²éÑ¯²¢ÏÔÊ¾ÈÕÖ¾ÐÅÏ¢Ïê¼ûÏÂÍ¼¡£
+3.åœ¨æ—¥å¿—ç•Œé¢çš„å·¦ä¸Šè§’å¯ä»¥é€‰æ‹©è¦æŸ¥è¯¢çš„ä»»åŠ¡ï¼Œé€‰æ‹©åŽï¼Œæ ¹æ®æŒ‡å®šçš„ä»»åŠ¡æŸ¥è¯¢å¹¶æ˜¾ç¤ºæ—¥å¿—ä¿¡æ¯è¯¦è§ä¸‹å›¾ã€‚
 
-¹ýÂËÈÎÎñ½çÃæ£º 
+è¿‡æ»¤ä»»åŠ¡ç•Œé¢ï¼š 
 
 ![](/articles/application/7-/images/7-4-11.png)
 
-²Ù×÷ËµÃ÷£º
+æ“ä½œè¯´æ˜Žï¼š
 
-1.Ñ¡ÔñÈÎÎñ·Ö×éÏÔÊ¾·Ö×éÏÂµÄÈÎÎñ
+1.é€‰æ‹©ä»»åŠ¡åˆ†ç»„æ˜¾ç¤ºåˆ†ç»„ä¸‹çš„ä»»åŠ¡
 
-2.Ñ¡Ôñ¾ßÌåÈÎÎñºó£¬½çÃæ»á°´ÕÕÑ¡ÔñµÄÈÎÎñ¹ýÂËÏÔÊ¾¡£
+2.é€‰æ‹©å…·ä½“ä»»åŠ¡åŽï¼Œç•Œé¢ä¼šæŒ‰ç…§é€‰æ‹©çš„ä»»åŠ¡è¿‡æ»¤æ˜¾ç¤ºã€‚
 
-###²é¿´ÈÕÖ¾ÏêÇé
+### æŸ¥çœ‹æ—¥å¿—è¯¦æƒ…
 
-½çÃæÈçÏÂÍ¼ËùÊ¾£º
+ç•Œé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![](/articles/application/7-/images/7-4-12.png)
 
-²Ù×÷ËµÃ÷£ºµã»÷ÈÎÎñÈÕÖ¾ÁÐ±í½çÃæµÄÊý¾ÝÐÐÓÒ²àµÄ¡°²é¿´Ô­Òò¡±°´Å¥£¬ÏÔÊ¾ÈÕÖ¾ÏêÇé¡£
+æ“ä½œè¯´æ˜Žï¼šç‚¹å‡»ä»»åŠ¡æ—¥å¿—åˆ—è¡¨ç•Œé¢çš„æ•°æ®è¡Œå³ä¾§çš„â€œæŸ¥çœ‹åŽŸå› â€æŒ‰é’®ï¼Œæ˜¾ç¤ºæ—¥å¿—è¯¦æƒ…ã€‚
 
-ÃèÊöÐÅÏ¢£º¶ÔÈÎÎñµÄ¼òµ¥ÃèÊö
+æè¿°ä¿¡æ¯ï¼šå¯¹ä»»åŠ¡çš„ç®€å•æè¿°
 
-###¿ª·¢²½Öè
+### å¼€å‘æ­¥éª¤
 
-1.´Ómaven¿âÉÏÏÂÔØwar°ü¡£
+1.ä»Žmavenåº“ä¸Šä¸‹è½½waråŒ…ã€‚
 
-2.ÅäÖÃdispatch_dbinfo.properties ÅäÖÃÎÄ¼þ£¬Á¬½ÓmysqlÊý¾Ý¿âµÄÊý¾ÝÔ´ÐÅÏ¢¡£
+2.é…ç½®dispatch_dbinfo.properties é…ç½®æ–‡ä»¶ï¼Œè¿žæŽ¥mysqlæ•°æ®åº“çš„æ•°æ®æºä¿¡æ¯ã€‚
 
-3.Ö´ÐÐdispatch.sql ºÍtables_mysql.sql ³õÊ¼»¯Êý¾Ý¿âµÄ½Å±¾¡£
+3.æ‰§è¡Œdispatch.sql å’Œtables_mysql.sql åˆå§‹åŒ–æ•°æ®åº“çš„è„šæœ¬ã€‚
 
-4.Ô¤ÖÃÊý¾Ý¿â±ídispatch_taskwayµÄÐÅÏ¢£¬ÕâÕÅ±íÊÇÓÃ»§ÒªÖ´ÐÐÈÎÎñµÄÇåµ¥£¬ÐèÒªÓÃ»§Ô¤ÖÃ½øÈ¥£¬ÆäÖÐurlÊÇÖ¸ÄãÒªÖ´ÐÐµÄ¶¨Ê±ÈÎÎñ£¬Í¨¹ýHTTPµÄ·½Ê½·ÃÎÊ¡£Èç¹û²»ÐèÒª´ø½çÃæµÄÈÎÎñµ÷¶È·þÎñ¿ÉÒÔºöÂÔ´ËÏî¡£
+4.é¢„ç½®æ•°æ®åº“è¡¨dispatch_taskwayçš„ä¿¡æ¯ï¼Œè¿™å¼ è¡¨æ˜¯ç”¨æˆ·è¦æ‰§è¡Œä»»åŠ¡çš„æ¸…å•ï¼Œéœ€è¦ç”¨æˆ·é¢„ç½®è¿›åŽ»ï¼Œå…¶ä¸­urlæ˜¯æŒ‡ä½ è¦æ‰§è¡Œçš„å®šæ—¶ä»»åŠ¡ï¼Œé€šè¿‡HTTPçš„æ–¹å¼è®¿é—®ã€‚å¦‚æžœä¸éœ€è¦å¸¦ç•Œé¢çš„ä»»åŠ¡è°ƒåº¦æœåŠ¡å¯ä»¥å¿½ç•¥æ­¤é¡¹ã€‚
 
-5.Rest·þÎñµ÷ÓÃ½Ó¿ÚÌá¹©ÈÎÎñµÄÔöÉ¾µÈ¹¦ÄÜ£¬¾ßÌåµ÷ÓÃ·½Ê½²Î¿¼¹¤³ÌÑùÀýÕÂ½Ú¡£
+5.RestæœåŠ¡è°ƒç”¨æŽ¥å£æä¾›ä»»åŠ¡çš„å¢žåˆ ç­‰åŠŸèƒ½ï¼Œå…·ä½“è°ƒç”¨æ–¹å¼å‚è€ƒå·¥ç¨‹æ ·ä¾‹ç« èŠ‚ã€‚
 
-6.´ø½çÃæµÄÈÎÎñµ÷¶ÈÏµÍ³·ÃÎÊ·½Ê½ 
+6.å¸¦ç•Œé¢çš„ä»»åŠ¡è°ƒåº¦ç³»ç»Ÿè®¿é—®æ–¹å¼ 
 
 http://IP:PORT/iuap-dispatch-service
 
-###Ô¤ÖÆÊý¾ÝËµÃ÷
+### é¢„åˆ¶æ•°æ®è¯´æ˜Ž
 
-ÐèÒªÓÃ»§ÔÚÊý¾Ý¿â±ídispatch_taskwayclass¡¢dispatch_taskwayºÍdispatch_taskparamÖÐÔ¤ÖÆ¹æÔòÊý¾Ý£¬
+éœ€è¦ç”¨æˆ·åœ¨æ•°æ®åº“è¡¨dispatch_taskwayclassã€dispatch_taskwayå’Œdispatch_taskparamä¸­é¢„åˆ¶è§„åˆ™æ•°æ®ï¼Œ
 
-1.dispatch_taskwayclas£º¹æÔò·ÖÀà
+1.dispatch_taskwayclasï¼šè§„åˆ™åˆ†ç±»
 
-2.dispatch_taskway£º¹æÔò£¬Ö÷ÒªÊÇurl×Ö¶ÎÎªÖ´ÐÐÈÎÎñÊ±£¬µ÷ÓÃµÄÒµÎñ·þÎñµÄµØÖ·£¬ÐèÒª°´ÈÎÎñµ÷ÓÃµÄÒªÇóÌá¹©¡£
+2.dispatch_taskwayï¼šè§„åˆ™ï¼Œä¸»è¦æ˜¯urlå­—æ®µä¸ºæ‰§è¡Œä»»åŠ¡æ—¶ï¼Œè°ƒç”¨çš„ä¸šåŠ¡æœåŠ¡çš„åœ°å€ï¼Œéœ€è¦æŒ‰ä»»åŠ¡è°ƒç”¨çš„è¦æ±‚æä¾›ã€‚
 
-3.dispatch_taskparam£º¹æÔò¿ÉÉèÖÃ²ÎÊýÁÐ±í£¬ÔÚµ÷ÓÃÒµÎñ·þÎñÊ±£¬»á¸ù¾ÝÈÎÎñÖ¸¶¨²ÎÊýµ÷ÓÃ
+3.dispatch_taskparamï¼šè§„åˆ™å¯è®¾ç½®å‚æ•°åˆ—è¡¨ï¼Œåœ¨è°ƒç”¨ä¸šåŠ¡æœåŠ¡æ—¶ï¼Œä¼šæ ¹æ®ä»»åŠ¡æŒ‡å®šå‚æ•°è°ƒç”¨
 
 
-###API½Ó¿Ú
+### APIæŽ¥å£
 
-###Ö¸¶¨ÈÎÎñBeanidÐÂÔö»ùÓÚCron±í´ïÊ½µÄ¶¨Ê±ÈÎÎñ
+### æŒ‡å®šä»»åŠ¡Beanidæ–°å¢žåŸºäºŽCronè¡¨è¾¾å¼çš„å®šæ—¶ä»»åŠ¡
 
-####ÃèÊö
+#### æè¿°
 
-Ìí¼Ó»ò¸²¸Ç»ùÓÚCron±í´ïÊ½µÄ¶¨Ê±µ÷¶ÈÈÎÎñ
+æ·»åŠ æˆ–è¦†ç›–åŸºäºŽCronè¡¨è¾¾å¼çš„å®šæ—¶è°ƒåº¦ä»»åŠ¡
 
-####ÇëÇó·½·¨
+#### è¯·æ±‚æ–¹æ³•
 
 /dispatchserver/add.do
 
-####ÇëÇó·½Ê½
+#### è¯·æ±‚æ–¹å¼
 
 post
 
-####ÇëÇó²ÎÊýËµÃ÷
+#### è¯·æ±‚å‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>recallConfig</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>»Øµ÷ÐÅÏ¢ÅäÖÃ£¬Json¸ñÊ½£¬¾ßÌå²Î¿¼ÏÂÃæËµÃ÷</td>
+      <td>æ— </td>
+      <td>å›žè°ƒä¿¡æ¯é…ç½®ï¼ŒJsonæ ¼å¼ï¼Œå…·ä½“å‚è€ƒä¸‹é¢è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>taskConfig</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñÖ´ÐÐÅäÖÃ£¬Json¸ñÊ½£¬¾ßÌå²Î¿¼ÏÂÃæËµÃ÷</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡æ‰§è¡Œé…ç½®ï¼ŒJsonæ ¼å¼ï¼Œå…·ä½“å‚è€ƒä¸‹é¢è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>replace</td>
       <td>True</td>
       <td>boolean</td>
-      <td>ÎÞ</td>
-      <td>ÊÇ·ñ¸²¸Ç£¬ÎªtureÊ±£¬×Ô¶¯¸²¸Ç£¬ÎªfalseÊ±£¬Èç¹û´æÔÚ»á·µ»Ø´íÎóÐÅÏ¢</td>
+      <td>æ— </td>
+      <td>æ˜¯å¦è¦†ç›–ï¼Œä¸ºtureæ—¶ï¼Œè‡ªåŠ¨è¦†ç›–ï¼Œä¸ºfalseæ—¶ï¼Œå¦‚æžœå­˜åœ¨ä¼šè¿”å›žé”™è¯¯ä¿¡æ¯</td>
    </tr>
 </table>
 
-recallConfigÄÚÈÝ¸ñÊ½£º
+recallConfigå†…å®¹æ ¼å¼ï¼š
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>recallType</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>»Øµ÷·½Ê½£¬SOCKET/HTTP</td>
+      <td>æ— </td>
+      <td>å›žè°ƒæ–¹å¼ï¼ŒSOCKET/HTTP</td>
    </tr>
    <tr>
       <td>option</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>»Øµ÷µÄ·½Ê½µØÖ·£¬"recallType" = "HTTP"Ê±£¬¸ñÊ½Îª{"url":"http://ip:port/XXX"} </td>
+      <td>æ— </td>
+      <td>å›žè°ƒçš„æ–¹å¼åœ°å€ï¼Œ"recallType" = "HTTP"æ—¶ï¼Œæ ¼å¼ä¸º{"url":"http://ip:port/XXX"} </td>
    </tr>
    <tr>
-      <td>"recallType" = "SOCKET"Ê±£¬¸ñÊ½Îª{"host":"ip","port"}</td>
+      <td>"recallType" = "SOCKET"æ—¶ï¼Œæ ¼å¼ä¸º{"host":"ip","port"}</td>
    </tr>
    <tr>
       <td>data</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñ¸½¼ÓÊý¾Ý£¬Ö´ÐÐÊ±´«µÝ¸øµ÷ÓÃ½Ó¿Ú£¬½¨ÒéÎªjson¸ñÊ½</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡é™„åŠ æ•°æ®ï¼Œæ‰§è¡Œæ—¶ä¼ é€’ç»™è°ƒç”¨æŽ¥å£ï¼Œå»ºè®®ä¸ºjsonæ ¼å¼</td>
    </tr>
 </table>
 
-taskConfigÄÚÈÝ¸ñÊ½£º
+taskConfigå†…å®¹æ ¼å¼ï¼š
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
+      <td>å‚æ•°å­—æ®µ</td>
       <td>triggerType</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>triggerType</td>
       <td></td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>´¥·¢·½Ê½£¬SimpleTrigger/CronTrigger£¬ÏÂÃæ²ÎÊý¸ù¾ÝÀàÐÍ²»Í¬±ä»¯£¬ </td>
+      <td>æ— </td>
+      <td>è§¦å‘æ–¹å¼ï¼ŒSimpleTrigger/CronTriggerï¼Œä¸‹é¢å‚æ•°æ ¹æ®ç±»åž‹ä¸åŒå˜åŒ–ï¼Œ </td>
    </tr>
    <tr>
-      <td>¿É²Î¿¼sdkÖÐµÄCronTaskConfig/SimpleTaskConfigÁ½ÖÖÅäÖÃÀà²ÎÊý</td>
+      <td>å¯å‚è€ƒsdkä¸­çš„CronTaskConfig/SimpleTaskConfigä¸¤ç§é…ç½®ç±»å‚æ•°</td>
    </tr>
    <tr>
       <td>jobCode</td>
       <td>SimpleTrigger/CronTrigger</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñÃû³Æ</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡åç§°</td>
    </tr>
    <tr>
       <td>groupCode</td>
       <td>SimpleTrigger/CronTrigger</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>×éÃû³Æ</td>
+      <td>æ— </td>
+      <td>ç»„åç§°</td>
    </tr>
    <tr>
       <td>priority</td>
       <td>SimpleTrigger/CronTrigger</td>
       <td>True</td>
       <td>int</td>
-      <td>ÎÞ</td>
-      <td>ÓÅÏÈ¼¶£¬Êý×Ö´óµÄÓÅÏÈÖ´ÐÐ</td>
+      <td>æ— </td>
+      <td>ä¼˜å…ˆçº§ï¼Œæ•°å­—å¤§çš„ä¼˜å…ˆæ‰§è¡Œ</td>
    </tr>
    <tr>
       <td>endDate</td>
       <td>SimpleTrigger/CronTrigger</td>
       <td>True</td>
       <td>Date</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñ½áÊøÊ¼Ê±¼ä</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡ç»“æŸå§‹æ—¶é—´</td>
    </tr>
    <tr>
       <td>cronExpress</td>
       <td>CronTrigger</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>±í´ïÊ½£¬</td>
+      <td>æ— </td>
+      <td>è¡¨è¾¾å¼ï¼Œ</td>
    </tr>
    <tr>
       <td>startDate</td>
       <td>SimpleTrigger</td>
       <td>True</td>
       <td>Date</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñ¿ªÊ¼Ê±¼ä</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡å¼€å§‹æ—¶é—´</td>
    </tr>
    <tr>
       <td>timeConfig</td>
       <td>SimpleTrigger</td>
       <td>True</td>
       <td>Json</td>
-      <td>ÎÞ</td>
-      <td>Ê±¼äÅäÖÃ£¬json¸ñÊ½£¬²Î¿¼TimeConfigÀà¸ñÊ½ÈçÏÂ</td>
+      <td>æ— </td>
+      <td>æ—¶é—´é…ç½®ï¼Œjsonæ ¼å¼ï¼Œå‚è€ƒTimeConfigç±»æ ¼å¼å¦‚ä¸‹</td>
    </tr>
 </table>
 
-timeConfigÄÚÈÝ¸ñÊ½£º
+timeConfigå†…å®¹æ ¼å¼ï¼š
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>interval</td>
       <td>True</td>
       <td>int</td>
-      <td>ÎÞ</td>
-      <td>Ö´ÐÐ¼ä¸ôÊ±¼ä£¬¾ßÌåµ¥Î»¼ûintervalType</td>
+      <td>æ— </td>
+      <td>æ‰§è¡Œé—´éš”æ—¶é—´ï¼Œå…·ä½“å•ä½è§intervalType</td>
    </tr>
    <tr>
       <td>intervalType</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>Ö´ÐÐ¼ä¸ôÊ±¼äµ¥Î»£ºNULL/MILLISECOND/SECOND/MINUTE/HOUR</td>
+      <td>æ— </td>
+      <td>æ‰§è¡Œé—´éš”æ—¶é—´å•ä½ï¼šNULL/MILLISECOND/SECOND/MINUTE/HOUR</td>
    </tr>
    <tr>
       <td>isForever</td>
       <td>True</td>
       <td>boolean</td>
-      <td>ÎÞ</td>
-      <td>ÊÇ·ñÖØ¸´Ö´ÐÐ£¬ÎªtrueÊ±»áÒ»Ö±¶¨Ê±Ö´ÐÐ£¬Ö±µ½ÔÝÍ£»òÉ¾³ýÈÎÎñ</td>
+      <td>æ— </td>
+      <td>æ˜¯å¦é‡å¤æ‰§è¡Œï¼Œä¸ºtrueæ—¶ä¼šä¸€ç›´å®šæ—¶æ‰§è¡Œï¼Œç›´åˆ°æš‚åœæˆ–åˆ é™¤ä»»åŠ¡</td>
    </tr>
    <tr>
       <td>repeatCount</td>
       <td>True</td>
       <td>int</td>
-      <td>ÎÞ</td>
-      <td>ÖØ¸´´ÎÊý£¬isForeverÎªfalseÊ±£¬ÈÎÎñ½öÖ´ÐÐÖ¸¶¨µÄ´ÎÊý</td>
+      <td>æ— </td>
+      <td>é‡å¤æ¬¡æ•°ï¼ŒisForeverä¸ºfalseæ—¶ï¼Œä»»åŠ¡ä»…æ‰§è¡ŒæŒ‡å®šçš„æ¬¡æ•°</td>
    </tr>
 </table>
 
-·µ»Ø²ÎÊýËµÃ÷
+è¿”å›žå‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>ÀàÐÍ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>ç±»åž‹</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>success</td>
@@ -455,62 +457,62 @@ timeConfigÄÚÈÝ¸ñÊ½£º
    <tr>
       <td>error</td>
       <td>String</td>
-      <td>´íÎóÐÅÏ¢</td>
+      <td>é”™è¯¯ä¿¡æ¯</td>
    </tr>
    <tr>
       <td>resultValue</td>
       <td>String</td>
-      <td>·µ»ØÖµ£¬Ò»°ãÎªnull</td>
+      <td>è¿”å›žå€¼ï¼Œä¸€èˆ¬ä¸ºnull</td>
    </tr>
 </table>
 
-###ÔÝÍ£ÈÎÎñ
+### æš‚åœä»»åŠ¡
 
-####ÃèÊö
+#### æè¿°
 
-¸ù¾ÝÈÎÎñÃû³ÆºÍ×éÃû³ÆÔÝÍ£ÈÎÎñ
+æ ¹æ®ä»»åŠ¡åç§°å’Œç»„åç§°æš‚åœä»»åŠ¡
 
-####ÇëÇó·½·¨
+#### è¯·æ±‚æ–¹æ³•
 
 /dispatchserver/pause.do
 
-####ÇëÇó·½Ê½
+#### è¯·æ±‚æ–¹å¼
 
 post
 
-####ÇëÇó²ÎÊýËµÃ÷
+#### è¯·æ±‚å‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>jobName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñÃû³Æ</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡åç§°</td>
    </tr>
    <tr>
       <td>groupName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>×éÃû³Æ</td>
+      <td>æ— </td>
+      <td>ç»„åç§°</td>
    </tr>
 </table>
 
-·µ»Ø²ÎÊýËµÃ÷
+è¿”å›žå‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>ÀàÐÍ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>ç±»åž‹</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>success</td>
@@ -520,62 +522,62 @@ post
    <tr>
       <td>error</td>
       <td>String</td>
-      <td>´íÎóÐÅÏ¢</td>
+      <td>é”™è¯¯ä¿¡æ¯</td>
    </tr>
    <tr>
       <td>resultValue</td>
       <td>String</td>
-      <td>·µ»ØÖµ£¬Ò»°ãÎªnull</td>
+      <td>è¿”å›žå€¼ï¼Œä¸€èˆ¬ä¸ºnull</td>
    </tr>
 </table>
 
-###»Ö¸´ÈÎÎñ
+### æ¢å¤ä»»åŠ¡
 
-####ÃèÊö
+#### æè¿°
 
-¸ù¾ÝÈÎÎñÃû³ÆºÍ×éÃû³Æ»Ö¸´ÈÎÎñ
+æ ¹æ®ä»»åŠ¡åç§°å’Œç»„åç§°æ¢å¤ä»»åŠ¡
 
-####ÇëÇó·½·¨
+#### è¯·æ±‚æ–¹æ³•
 
 /dispatchserver/resumeTask.do
 
-####ÇëÇó·½Ê½
+#### è¯·æ±‚æ–¹å¼
 
 post
 
-ÇëÇó²ÎÊýËµÃ÷
+è¯·æ±‚å‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>jobName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñÃû³Æ</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡åç§°</td>
    </tr>
    <tr>
       <td>groupName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>×éÃû³Æ</td>
+      <td>æ— </td>
+      <td>ç»„åç§°</td>
    </tr>
 </table>
 
-·µ»Ø²ÎÊýËµÃ÷
+è¿”å›žå‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>ÀàÐÍ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>ç±»åž‹</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>success</td>
@@ -585,62 +587,62 @@ post
    <tr>
       <td>error</td>
       <td>String</td>
-      <td>´íÎóÐÅÏ¢</td>
+      <td>é”™è¯¯ä¿¡æ¯</td>
    </tr>
    <tr>
       <td>resultValue</td>
       <td>String</td>
-      <td>·µ»ØÖµ£¬Ò»°ãÎªnull</td>
+      <td>è¿”å›žå€¼ï¼Œä¸€èˆ¬ä¸ºnull</td>
    </tr>
 </table>
 
-###É¾³ýÈÎÎñ
+### åˆ é™¤ä»»åŠ¡
 
-####ÃèÊö
+#### æè¿°
 
-¸ù¾ÝÈÎÎñÃû³ÆºÍ×éÃû³ÆÉ¾³ýÈÎÎñ
+æ ¹æ®ä»»åŠ¡åç§°å’Œç»„åç§°åˆ é™¤ä»»åŠ¡
 
-####ÇëÇó·½·¨
+#### è¯·æ±‚æ–¹æ³•
 
 /dispatchserver/delete.do
 
-####ÇëÇó·½Ê½
+#### è¯·æ±‚æ–¹å¼
 
 post
 
-####ÇëÇó²ÎÊýËµÃ÷
+#### è¯·æ±‚å‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>jobName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñÃû³Æ</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡åç§°</td>
    </tr>
    <tr>
       <td>groupName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>×éÃû³Æ</td>
+      <td>æ— </td>
+      <td>ç»„åç§°</td>
    </tr>
 </table>
 
-·µ»Ø²ÎÊýËµÃ÷
+è¿”å›žå‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>ÀàÐÍ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>ç±»åž‹</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>success</td>
@@ -650,66 +652,66 @@ post
    <tr>
       <td>error</td>
       <td>String</td>
-      <td>´íÎóÐÅÏ¢</td>
+      <td>é”™è¯¯ä¿¡æ¯</td>
    </tr>
    <tr>
       <td>resultValue</td>
       <td>String</td>
-      <td>·µ»ØÖµ£¬Ò»°ãÎªnull</td>
+      <td>è¿”å›žå€¼ï¼Œä¸€èˆ¬ä¸ºnull</td>
    </tr>
 </table>
 
-###Á¢¼´Ö´ÐÐÈÎÎñ
+### ç«‹å³æ‰§è¡Œä»»åŠ¡
 
-####ÃèÊö
+#### æè¿°
 
-¸ù¾ÝÈÎÎñÃû³ÆºÍ×éÃû³ÆÁ¢¼´Ö´ÐÐÈÎÎñ
+æ ¹æ®ä»»åŠ¡åç§°å’Œç»„åç§°ç«‹å³æ‰§è¡Œä»»åŠ¡
 
-####ÇëÇó·½·¨
+#### è¯·æ±‚æ–¹æ³•
 
 /dispatchserver/trigger.do
 
-####ÇëÇó·½Ê½
+#### è¯·æ±‚æ–¹å¼
 
 post
 
-####ÇëÇó²ÎÊýËµÃ÷
+#### è¯·æ±‚å‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
       <td></td>
    </tr>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>±ØÑ¡</td>
-      <td>ÀàÐÍ</td>
-      <td>³¤¶ÈÏÞÖÆ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>å¿…é€‰</td>
+      <td>ç±»åž‹</td>
+      <td>é•¿åº¦é™åˆ¶</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>jobName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>ÈÎÎñÃû³Æ</td>
+      <td>æ— </td>
+      <td>ä»»åŠ¡åç§°</td>
    </tr>
    <tr>
       <td>groupName</td>
       <td>True</td>
       <td>String</td>
-      <td>ÎÞ</td>
-      <td>×éÃû³Æ</td>
+      <td>æ— </td>
+      <td>ç»„åç§°</td>
    </tr>
 </table>
 
 
-####·µ»Ø²ÎÊýËµÃ÷
+#### è¿”å›žå‚æ•°è¯´æ˜Ž
 
 <table>
    <tr>
-      <td>²ÎÊý×Ö¶Î</td>
-      <td>ÀàÐÍ</td>
-      <td>ËµÃ÷</td>
+      <td>å‚æ•°å­—æ®µ</td>
+      <td>ç±»åž‹</td>
+      <td>è¯´æ˜Ž</td>
    </tr>
    <tr>
       <td>success</td>
@@ -719,11 +721,11 @@ post
    <tr>
       <td>error</td>
       <td>String</td>
-      <td>´íÎóÐÅÏ¢</td>
+      <td>é”™è¯¯ä¿¡æ¯</td>
    </tr>
    <tr>
       <td>resultValue</td>
       <td>String</td>
-      <td>·µ»ØÖµ£¬Ò»°ãÎªnull</td>
+      <td>è¿”å›žå€¼ï¼Œä¸€èˆ¬ä¸ºnull</td>
    </tr>
 </table>
