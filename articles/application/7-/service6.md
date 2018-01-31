@@ -25,17 +25,11 @@ iuap-message组件提供了向手机发送短信、发送电子邮件、向APP�
 ### 依赖环境
 
 组件采用Maven进行编译和打包发布，其对外提供的依赖方式如下：
-1<dependency>
-   
-2<groupId>com.yonyou.iuap</groupId>
 
-3<artifactId>iuap-message</artifactId>
-
-4 <version>${iuap.modules.version}</version>
-
-5</dependency>
+<div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;dependency&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;groupId&gt;com.yonyou.iuap&lt;/groupId&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;artifactId&gt;iuap-message&lt;/artifactId&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;version&gt;${iuap.modules.version}&lt;/version&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">&lt;/dependency&gt;</code></td></tr></tbody></table></div></div>
 
 ${iuap.modules.version} 为平台在maven私服上发布的组件的version。
+
 
 ### 功能说明
 
@@ -93,7 +87,7 @@ MessageReceiver emailReceivers = new EmailReceiver("username1@domain.com,usernam
 // 创建消息内容
 MessageContent emailContent = new EmailContent("我是标题1", "测试内容1");
 // 发送消息
-List<MessageResponse> responseList = new MessageSend(emailReceivers, emailContent).send(); <pre>
+List<MessageResponse> responseList = new MessageSend(emailReceivers, emailContent).send(); </pre>
 
 
 ### 常用接口
