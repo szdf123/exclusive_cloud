@@ -148,7 +148,7 @@
     * [用户场景一](articles/portal/4-/scenario_one.md)
     * [用户场景二](articles/portal/4-/scenario_two.md)
   * [用户手册](articles/portal/5-/)  
-	*[管理中心概述](articles/portal/5-/summary.md)
+	* [管理中心概述](articles/portal/5-/summary.md)
 	* [门户配置](articles/portal/5-/config.md)
 	* [功能配置](articles/portal/5-/functions.md)
 	* [工作台配置](articles/portal/5-/workbench.md)
