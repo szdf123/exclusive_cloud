@@ -131,15 +131,15 @@ new MessageSend(msgReceivers, msgContent).send();
 
 2.msgContent消息内容，可以设置消息标题、文本内容。
 
-####描述
+#### 描述
 
 短信、邮件和APP通过消息通道发送接口
 
-####请求方法
+#### 请求方法
 
 new MessageSend(msgReceivers, msgContent, channel).send();
 
-####请求参数说明
+#### 请求参数说明
 
 <table> 
    <tbody>
@@ -191,14 +191,14 @@ new MessageSend(msgReceivers, msgContent, channel).send();
   <sms>
     <corpId></corpId><!-- 账户ID -->
     <secretKey></secretKey><!-- 接口调用秘钥 -->
-    <url>http://umessage.yyuap.com/remote/sendSms.do</url><!-- 短信服务器URL -->
+    <url>`http://umessage.yyuap.com/remote/sendSms.do`</url><!-- 短信服务器URL -->
   </sms>
 <!-- 短信服务参数配置  END-->
 <!-- 消息推送参数配置  START-->
   <messagepush>
     <userName></userName><!-- 账户名(即控制台登录名) -->
     <userKey></userKey><!-- 远程接口秘钥 -->
-    <url>http://upush.yyuap.com/remote/req.do</url><!-- 消息推送服务器URL -->
+    <url>`http://upush.yyuap.com/remote/req.do`</url><!-- 消息推送服务器URL -->
   </messagepush>
 <!-- 消息推送参数配置  END-->
 <!-- 邮件服务发送参数配置  START-->
@@ -236,7 +236,7 @@ Map<String, Object> channelInfoMap = getEmailSenderInfo.getSenderInfo(“消息�
 <bean id="senderInfoFetcher" class="com.yonyou.uap.service.SenderInfoFetcher" />
 </pre>
 
-###扩展机制
+### 扩展机制
 
 1.发送HTML内容的电子邮件： 
 
