@@ -189,27 +189,27 @@ new MessageSend(msgReceivers, msgContent, channel).send();
 
 （2）完成消息通道的实现类，实现接口com.yonyou.uap.service.IMessageSendChannelExt，并配置到文件message-channelExt.xml中。
 
-<pre>
+```
 <MessageSendChannelExt>
     <mail>com.yonyou.uap.service.impl.mail.EMailSend</mail>
     <sms>com.yonyou.uap.service.impl.sms.SMSSend</sms>
     <messagepush>com.yonyou.uap.service.impl.messagepush.MessagePush</messagepush>
 </MessageSendChannelExt>
-</pre>
+```
 
 (3)消息具体参数配置可以通过以下方式获取：
 
-<pre>
+```
 ISenderInfoFetch getEmailSenderInfo = new SenderInfoFetchByXML();
 Map<String, Object> channelInfoMap = getEmailSenderInfo.getSenderInfo(“消息通道编码”);
-</pre>
+```
 
 (4)需要在引用组件的war包aplication.xmk中配置以下两个bean
 
-<pre>
+```
 <bean id="senderInfoFetch" class="com.yonyou.uap.message.service.impl.SenderInfoFetchByDB" />
 <bean id="senderInfoFetcher" class="com.yonyou.uap.service.SenderInfoFetcher" />
-</pre>
+```
 
 ### 扩展机制
 
