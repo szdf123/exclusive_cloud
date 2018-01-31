@@ -185,32 +185,7 @@ new MessageSend(msgReceivers, msgContent, channel).send();
 
 (1)默认支持sms,messagepush,email，用户可扩展自己的消息通道，若要扩展消息通道，需在配置文件message-senderInfo.property中增加自己的消息通道,仿照下面的示例设置参数
 
-<pre>
-<msconfig>
-<!-- 短信服务参数配置  START-->
-  <sms>
-    <corpId></corpId><!-- 账户ID -->
-    <secretKey></secretKey><!-- 接口调用秘钥 -->
-    <url>`http://umessage.yyuap.com/remote/sendSms.do`</url><!-- 短信服务器URL -->
-  </sms>
-<!-- 短信服务参数配置  END-->
-<!-- 消息推送参数配置  START-->
-  <messagepush>
-    <userName></userName><!-- 账户名(即控制台登录名) -->
-    <userKey></userKey><!-- 远程接口秘钥 -->
-    <url>`http://upush.yyuap.com/remote/req.do`</url><!-- 消息推送服务器URL -->
-  </messagepush>
-<!-- 消息推送参数配置  END-->
-<!-- 邮件服务发送参数配置  START-->
-  <mail>
-    <userName></userName><!-- 账户名(发件人邮箱账户的账号) -->
-    <password></password><!-- 密码(发件人邮箱账户的密码) -->
-    <hostName>mail.yonyou.com</hostName><!-- 邮件发送服务器SMTP地址URL -->
-    <port>25</port><!-- 邮件发送服务器SMTP端口号 -->
-  </mail>
-<!-- 邮件服务参数配置  END-->
-</msconfig>
-</pre>
+<div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="plain">&lt;msconfig&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="plain">&lt;!-- 短信服务参数配置&nbsp; START--&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;sms&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;corpId&gt;&lt;/corpId&gt;&lt;!-- 账户ID --&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;secretKey&gt;&lt;/secretKey&gt;&lt;!-- 接口调用秘钥 --&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;url&gt;http:</code><code class="comments">//umessage.yyuap.com/remote/sendSms.do&lt;/url&gt;&lt;!-- 短信服务器URL --&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;/sms&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="plain">&lt;!-- 短信服务参数配置&nbsp; END--&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="plain">&lt;!-- 消息推送参数配置&nbsp; START--&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;messagepush&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;userName&gt;&lt;/userName&gt;&lt;!-- 账户名(即控制台登录名) --&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;userKey&gt;&lt;/userKey&gt;&lt;!-- 远程接口秘钥 --&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;url&gt;http:</code><code class="comments">//upush.yyuap.com/remote/req.do&lt;/url&gt;&lt;!-- 消息推送服务器URL --&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;/messagepush&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="plain">&lt;!-- 消息推送参数配置&nbsp; END--&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="plain">&lt;!-- 邮件服务发送参数配置&nbsp; START--&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;mail&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;userName&gt;&lt;/userName&gt;&lt;!-- 账户名(发件人邮箱账户的账号) --&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;password&gt;&lt;/password&gt;&lt;!-- 密码(发件人邮箱账户的密码) --&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>22</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;hostName&gt;mail.yonyou.com&lt;/hostName&gt;&lt;!-- 邮件发送服务器SMTP地址URL --&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>23</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&lt;port&gt;</code><code class="value">25</code><code class="plain">&lt;/port&gt;&lt;!-- 邮件发送服务器SMTP端口号 --&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>24</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">&lt;/mail&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>25</code></td><td class="content"><code class="plain">&lt;!-- 邮件服务参数配置&nbsp; END--&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>26</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>27</code></td><td class="content"><code class="plain">&lt;/msconfig&gt;</code></td></tr></tbody></table></div></div>
 
 （2）完成消息通道的实现类，实现接口com.yonyou.uap.service.IMessageSendChannelExt，并配置到文件message-channelExt.xml中。
 
@@ -242,14 +217,14 @@ Map<String, Object> channelInfoMap = getEmailSenderInfo.getSenderInfo(“消息�
 
 在设置邮件发送内容时，可以直接编写HTML代码，如下：
 
-<pre>
+```
 StringBuffer htmlContent = new StringBuffer();
 htmlContent.append("<h1>我是标题</h1>");
 htmlContent.append("<h3>企业互联网运营支撑平台</h3>");
 htmlContent.append("<div><img src='http://img4.3lian.com/sucai/img6/230/29.jpg'></div>");
 htmlContent.append("<a href='http://iuap.yonyou.com/'>用友开放平台</a>");
 MessageContent mailContent = new EmailContent("HTML Mail测试", htmlContent.toString());
-</pre>
+```
 
 这样就可以发送HTML格式的邮件。
 
