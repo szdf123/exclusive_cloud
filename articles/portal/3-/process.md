@@ -14,8 +14,8 @@
 <table>
 <tr><td>一级目录</td><td>二级目录</td><td>说明</td></tr>
 <tr><td rowspan=18>Portal</td><td>apworkbench</td><td>工作台前端</td></tr>
-<tr><td>components</td><td>Portal</td><td>组件库</td></tr>
-<tr><td>font</td><td>Portal</td><td>字体库</td></tr>
+<tr><td>components</td><td>Portal组件库</td></tr>
+<tr><td>font</td><td>Portal字体库</td></tr>
 <tr><td>fonts</td><td>所有产品的字体库</td></tr>
 <tr><td>images</td><td>图片目录</td></tr>
 <tr><td>js</td><td>脚本目录</td></tr>
@@ -25,14 +25,14 @@
 <tr><td>static</td><td>静态资源</td></tr>
 <tr><td></td></tr>
 <tr><td>sys</td><td>系统级文件目录</td></tr>
-<tr><td>themes</td><td>Portal</td><td>主题</td></tr>
+<tr><td>themes</td><td>Portal主题</td></tr>
 <tr><td>tools</td><td>工具目录</td></tr>
 <tr><td>trd</td><td>第三方脚本库</td></tr>
-<tr><td>vendor</td><td>第三方</td><td>js</td><td>库</td></tr>
+<tr><td>vendor</td><td>第三方js库</td></tr>
 <tr><td>WEB-INF</td><td>私有资源目录</td></tr>
 <tr><td>widget</td><td>小部件目录</td></tr>
 
-<tr><td colspan=8>integration</td><td>js</td><td>脚本目录</td></tr>
+<tr><td rowspan=8>integration</td><td>js</td><td>脚本目录</td></tr>
 <tr><td>META-INF</td><td>包信息</td></tr>
 <tr><td>pages</td><td>图片目录</td></tr>
 <tr><td>sso</td><td>单点登录信息</td></tr>
@@ -41,7 +41,7 @@
 <tr><td>widget</td><td>小部件目录</td></tr>
 <tr><td>tem.xml</td><td>临时文件</td></tr>
 
-<tr><td colspa=3>uitemplate_web</td><td>META-INF</td><td>包信息</td></tr>
+<tr><td rowspan=3>uitemplate_web</td><td>META-INF</td><td>包信息</td></tr>
 <tr><td>static</td><td>静态资源</td></tr>
 <tr><td>WEB-INF</td><td>私有资源目录</td></tr>
 </table>
