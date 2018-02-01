@@ -154,6 +154,7 @@ tag   false   String   50    标签
       <td>underController   </td>
       <td> boolean</td>
       <td> -  </td>
+      <td> -  </td>
       <td> 需要授权</td>
    </tr>
  
@@ -161,62 +162,63 @@ tag   false   String   50    标签
       <td>userAssociate </td>
       <td> false </td>
       <td> boolean</td>
-      <td> -   用户自行管理</td>
+      <td> -  </td>
+      <td>用户自行管理</td>
    </tr>
    
    <tr>
       <td>supportfw </td>
       <td>false  </td>
-      <td> -       </td>
-     <td>  -   </td>
-	<td>     支持轻量化</td>
+      <td>- </td>
+     <td>- </td>
+	<td> 支持轻量化</td>
    </tr>
  
    <tr>
-      <td>model<td>   
-      <td>true <td>
-      <td>String <td>
-      <td>50   <td>
+      <td>model</td>   
+      <td>true </td>
+      <td>String </td>
+      <td>50 </td>
      <td> 是否信任模式</td>
    </tr>
  
    <tr>
-      <td>secretkey <td>
-     <td> true  <td>
-      <td>String  <td>
-      <td>50  <td>
+      <td>secretkey </td>
+     <td> true  </td>
+      <td>String  </td>
+      <td>50  </td>
       <td>密钥</td>
    </tr>
 
    <tr>
-      <td>verify  <td>
-      <td>true<td>
-      <td>Json  <td>
-      <td>-  <td>
+      <td>verify  </td>
+      <td>true</td>
+      <td>Json  </td>
+      <td>-  </td>
       <td>见下表    </td>
    </tr>
   
    <tr>
-      <td>ipmapping <td>
-      <td>true <td>
-      <td>Json<td>
-      <td>-   <td>
+      <td>ipmapping </td>
+      <td>true </td>
+      <td>Json</td>
+      <td>-   </td>
       <td>见下表   </td>
    </tr>
    
    <tr>
-      <td>extendAttributes <td>
-      <td>false <td>
-      <td>Json <td>
-      <td>-  <td>
+      <td>extendAttributes </td>
+      <td>false </td>
+      <td>Json </td>
+      <td>-  </td>
       <td>扩展选项</td>
    </tr>
 
    <tr>
-      <td>tag<td>
-      <td>false <td>
-      <td>String<td>
-      <td>50   <td>
+      <td>tag</td>
+      <td>false </td>
+      <td>String</td>
+      <td>50   </td>
       <td>标签</td>
    </tr>
 </table>
@@ -391,6 +393,7 @@ GET
 #### 请求参数说明
 
 参数字段   必选   类型    长度限制   说明 
+
 {code}    true   String   50   系统编码
 
 
@@ -482,7 +485,7 @@ pageIndex   true   int    -     页数
 
 pageSize  true   int  -  每页条数
 
-key   false   String    查询关键字
+key   false   String    - 查询关键字
 
 <table>
    <tr>
@@ -513,6 +516,7 @@ key   false   String    查询关键字
       <td>key   </td>
      <td> false  </td>
      <td> String  </td>
+     <td>- </td>
      <td> 查询关键字</td>
    </tr>
 </table>
@@ -606,14 +610,15 @@ first boolean  -   -
       <td>last  </td>
      <td> true  </td>
      <td> boolean  </td>
-     <td> -  </td>
-    <td>  -</td>
+     <td>-  </td>
+    <td>-</td>
    </tr>
   
    <tr>
       <td>totalElements  </td>
      <td> int </td>
       <td>-  </td>
+       <td>-   </td>
     <td>  总共元素</td>
    </tr>
    
@@ -621,27 +626,31 @@ first boolean  -   -
       <td>totalPages</td>
       <td>int</td>
       <td>- </td>
+       <td>-   </td>
       <td>总页数 </td>
    </tr>
   
    <tr>
       <td>size </td>
      <td> int </td>
-    <td>  -   </td>
+    <td> -   </td>
+     <td>-   </td>
      <td> 每页大小  </td>
    </tr>
   
    <tr>
       <td>number </td>
      <td> int</td>
-     <td> - </td>
+      <td>-   </td>
+       <td>-   </td>
      <td> 第几页 </td>
    </tr>
   
    <tr>
       <td>numberOfElements </td>
      <td> int </td>
-    <td>  -  </td>
+     <td>-   </td>
+      <td>-   </td>
      <td> 元素位置</td>
    </tr>
    
@@ -649,6 +658,7 @@ first boolean  -   -
       <td>sort </td>
       <td>Json</td>
       <td>-   </td>
+       <td>-   </td>
       <td>类别 </td>
    </tr>
    
@@ -656,6 +666,7 @@ first boolean  -   -
       <td>first </td>
       <td>boolean</td> 
       <td>- </td>  
+       <td>-   </td>
       <td>-</td>
    </tr>
 </table>
