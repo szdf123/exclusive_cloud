@@ -101,7 +101,7 @@ gateway  false   String  -   网关
 
 underController   boolean  -  需要授权
 
-userAssociate   false  boolean   -   用户自行管理
+userAssociate   false  boolean   -   用户自行关联
 
 supportfw   false    -          -   支持轻量化
 
@@ -163,7 +163,7 @@ tag   false   String   50    标签
       <td> false </td>
       <td> boolean</td>
       <td> -  </td>
-      <td>用户自行管理</td>
+      <td>用户自行关联</td>
    </tr>
    
    <tr>
@@ -409,7 +409,7 @@ GET
    </tr>
 
     <tr>
-      <td>{code}</td>  
+      <td>code</td>  
       <td>true  </td>
       <td>String  </td>
       <td>50 </td>
