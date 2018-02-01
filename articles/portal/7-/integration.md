@@ -21,19 +21,6 @@ post
 
 
 
-参数字段   必选   类型    长度限制   说明  
-
-name   true   String    100   系统名称
- 
-i18n   false  String    50   -
-  
-code   true   String    50   系统编码
-
-setting   true   Json   -   第三方系统设置信息，具体见下表
-
-tag   true   String   50   版本戳
-
-
 <table>
 
    <tr>
@@ -91,31 +78,6 @@ tag   true   String   50   版本戳
 
 setting内容格式
 
-参数字段   必选   类型    长度限制   说明  
-
-code    true   String     50     系统编码
-
-name   true   String  100  系统名称
-
-gateway  false   String  -   网关
-
-underController   boolean  -  需要授权
-
-userAssociate   false  boolean   -   用户自行关联
-
-supportfw   false    -          -   支持轻量化
-
-model   true    String  50   是否信任模式
-
-secretkey  true   String  50  密钥
-
-verify  true   Json  -  见下表    
-
-ipmapping  true  Json  -   见下表   
-
-extendAttributes  false   Json -  扩展选项
-
-tag   false   String   50    标签
 
 <table>
    <tr>
@@ -227,18 +189,6 @@ tag   false   String   50    标签
 
 verify 内容格式
 
-参数字段   必选   类型    长度限制   说明 
-
-interfaceURL  false  String -   验证界面URL
-
-verifyURL  false  String   -    验证URL
-
-authorURL  false  String  -    认证URL
-
-verifyItem  false  Json  -     验证参数和值
-
-resultValidator  false  Json  -    -
-
 
 <table>
    <tr>
@@ -293,13 +243,6 @@ resultValidator  false  Json  -    -
 
 ipmapping 内容格式 
 
-参数字段   必选   类型    长度限制   说明 
-
-enableMapping  true boolean  -   是否IP映射
-
-ipMapping   false   Json    -    -
-
-
 <table>
    <tr>
       <td>参数字段</td>   
@@ -328,18 +271,7 @@ ipMapping   false   Json    -    -
 </table>
 
 
-http://pressbin.com/tools/excel_to_html_table/index.html
-
-
 返回参数说明 
-
-参数字段   必选   类型    长度限制   说明 
-
-status  true    String   1     成功与失败状态
-
-message false  String -   返回具体信息
-
-data   false  String  -  返回具体数据
 
 
 <table>
@@ -384,20 +316,13 @@ data   false  String  -  返回具体数据
 
 #### 请求方法
 
-/integration/system/delete/jira?r=0.7300665230450025&_=1517449633197
+/integration/system/delete/jira
 
 #### 请求方式
 
 GET
 
 #### 请求参数说明
-
-参数字段   必选   类型    长度限制   说明 
-
-{code}    true   String   50   系统编码
-
-
-
 
 <table>
    <tr>
@@ -408,7 +333,7 @@ GET
       <td>说明 </td>
    </tr>
     <tr>
-      <td>code</td>  
+      <td>{code}</td>  
       <td>true  </td>
       <td>String  </td>
       <td>50 </td>
@@ -418,14 +343,6 @@ GET
 
 
 #### 返回参数说明 
-
-参数字段   必选   类型    长度限制   说明 
-
-status  true    String   1     成功与失败状态
-
-message false  String -   返回具体信息
-
-data   false  String  -  返回具体数据
 
 <table>
    <tr>
@@ -478,14 +395,6 @@ POST
 
 #### 请求参数说明
 
-参数字段   必选   类型    长度限制   说明 
-
-pageIndex   true   int    -     页数 
-
-pageSize  true   int  -  每页条数
-
-key   false   String    - 查询关键字
-
 <table>
    <tr>
       <td>参数字段 </td>
@@ -523,14 +432,6 @@ key   false   String    - 查询关键字
 
 #### 返回参数说明
 
-参数字段   必选   类型    长度限制   说明 
-
-status  true   int   -   返回状态
-
-message  false  String   -  返回信息
-
-data   false   Json      -    返回数据 
-
 <table>
    <tr>
       <td>参数字段</td>
@@ -566,27 +467,6 @@ data   false   Json      -    返回数据
 </table>
 
 data具体内容格式说明 
-
-
-参数字段   必选   类型    长度限制   说明 
-
-content  false   String  -   具体内容 
-
-last   true   boolean   -   -
-
-totalElements   int   -   总共元素 
-
-totalPages   int  -   总页数 
-
-size  int  -    每页大小  
-
-number  int  -  第几页 
-
-numberOfElements int -   元素位置
-
-sort  Json    -   类别 
-
-first boolean  -   -
 
 <table>
       <tr>
@@ -672,18 +552,6 @@ first boolean  -   -
 
 
 sort 具体内容格式说明
-
-参数字段   必选   类型    长度限制   说明 
-
-direction  true  String  -    排序方式
-
-property  true   String -   -
-
-ignoreCase  true  boolean   -  忽略大小写
-
-nullHandling   true   String -   - 
-
-ascending   true   boolean   -   - 
 
 <table>
    <tr>
