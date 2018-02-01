@@ -35,41 +35,53 @@ tag   true   String   50   版本戳
 
 
 <table>
+
    <tr>
-      <td></td>
+      <td>参数字段   </td>
+      <td>必选   </td>
+      <td>类型    </td>
+      <td>长度限制  </td>
+      <td>说明  </td>
    </tr>
+
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明  </td>
+      <td>name   </td>
+      <td>true  </td>
+      <td>String   </td>
+      <td>100   </td>
+      <td>系统名称</td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>i18n  </td>
+      <td>false  </td>
+      <td>String </td>
+      <td>50  </td>
+      <td>-</td>
    </tr>
+ 
    <tr>
-      <td>name   true   String    100   系统名称</td>
+      <td>code  </td>
+      <td>true  </td>
+      <td>String  </td>
+	  <td>  50   </td>
+      <td>系统编码</td>
    </tr>
+
    <tr>
-      <td> </td>
+      <td>setting </td>  
+       <td>true   </td>
+       <td>Json </td>
+       <td>-    </td>
+      <td> 第三方系统设置信息，具体见下表</td>
    </tr>
+  
    <tr>
-      <td>i18n   false  String    50   -</td>
-   </tr>
-   <tr>
-      <td>  </td>
-   </tr>
-   <tr>
-      <td>code   true   String    50   系统编码</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>setting   true   Json   -   第三方系统设置信息，具体见下表</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>tag   true   String   50   版本戳</td>
+      <td>tag  </td>
+       <td>true </td>
+       <td>String </td>
+       <td>50   </td>
+      <td> 版本戳</td>
    </tr>
 </table>
 
@@ -107,79 +119,105 @@ tag   false   String   50    标签
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明  </td>
+      <td>参数字段 </td>
+      <td>必选  </td>
+      <td>类型   </td>
+      <td>长度限制 </td>  
+      <td>说明  </td>
    </tr>
+  
    <tr>
-      <td></td>
+      <td>code   </td>
+     <td> true  </td>
+      <td>String  </td>
+      <td>50    </td>
+      <td>系统编码</td>
    </tr>
+  
    <tr>
-      <td>code    true   String     50     系统编码</td>
+      <td>name  </td>
+        <td>true  </td>
+        <td>String  </td>
+        <td>100  </td>
+       <td> 系统名称</td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>gateway </td>
+        <td>false  </td>
+        <td>String  </td>
+        <td>-   </td>
+        <td>网关</td>
    </tr>
+
    <tr>
-      <td>name   true   String  100  系统名称</td>
+      <td>underController   </td>
+      <td> boolean</td>
+      <td> -  </td>
+      <td> 需要授权</td>
    </tr>
+ 
    <tr>
-      <td></td>
+      <td>userAssociate </td>
+      <td> false </td>
+      <td> boolean</td>
+      <td> -   用户自行管理</td>
    </tr>
+   
    <tr>
-      <td>gateway  false   String  -   网关</td>
+      <td>supportfw </td>
+      <td>false  </td>
+      <td> -       </td>
+     <td>  -   </td>
+	<td>     支持轻量化</td>
    </tr>
+ 
    <tr>
-      <td></td>
+      <td>model<td>   
+      <td>true <td>
+      <td>String <td>
+      <td>50   <td>
+     <td> 是否信任模式</td>
    </tr>
+ 
    <tr>
-      <td>underController   boolean  -  需要授权</td>
+      <td>secretkey <td>
+     <td> true  <td>
+      <td>String  <td>
+      <td>50  <td>
+      <td>密钥</td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>verify  <td>
+      <td>true<td>
+      <td>Json  <td>
+      <td>-  <td>
+      <td>见下表    </td>
    </tr>
+  
    <tr>
-      <td>userAssociate   false  boolean   -   用户自行管理</td>
+      <td>ipmapping <td>
+      <td>true <td>
+      <td>Json<td>
+      <td>-   <td>
+      <td>见下表   </td>
    </tr>
+   
    <tr>
-      <td></td>
+      <td>extendAttributes <td>
+      <td>false <td>
+      <td>Json <td>
+      <td>-  <td>
+      <td>扩展选项</td>
    </tr>
+
    <tr>
-      <td>supportfw   false    -          -   支持轻量化</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>model   true    String  50   是否信任模式</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>secretkey  true   String  50  密钥</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>verify  true   Json  -  见下表    </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>ipmapping  true  Json  -   见下表   </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>extendAttributes  false   Json -  扩展选项</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>tag   false   String   50    标签</td>
+      <td>tag<td>
+      <td>false <td>
+      <td>String<td>
+      <td>50   <td>
+      <td>标签</td>
    </tr>
 </table>
 
@@ -202,43 +240,51 @@ resultValidator  false  Json  -    -
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段  </td>
+       <td>必选  </td>
+       <td>类型   </td>
+       <td>长度限制</td>
+      <td> 说明 </td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>interfaceURL  </td>
+      <td> false </td>
+      <td> String</td>
+     <td>  -   </td>
+      <td> 验证界面URL</td>
    </tr>
+
    <tr>
-      <td>interfaceURL  false  String -   验证界面URL</td>
+      <td>verifyURL</td> 
+      <td> false</td>
+      <td> String </td>
+     <td>  -  </td>
+     <td>  验证URL</td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>authorURL</td>
+      <td> false</td>
+      <td> String</td>
+      <td> -   </td>
+      <td> 认证URL</td>
    </tr>
+
    <tr>
-      <td>verifyURL  false  String   -    验证URL</td>
+      <td>verifyItem </td>
+      <td> false</td>
+       <td>Json </td>
+      <td> -   </td>
+      <td> 验证参数和值</td>
    </tr>
+
    <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>authorURL  false  String  -    认证URL</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>verifyItem  false  Json  -     验证参数和值</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>resultValidator  false  Json  -    -</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
+      <td>resultValidator</td>
+      <td> false </td>
+       <td>Json </td>
+       <td>-</td> 
+      <td> -</td>
    </tr>
 </table>
 
@@ -254,23 +300,29 @@ ipMapping   false   Json    -    -
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段</td>   
+        <td>必选 </td>
+        <td>类型   </td>
+        <td>长度限制</td>
+        <td>说明 </td>
    </tr>
+  
    <tr>
-      <td></td>
+      <td>enableMapping </td>
+        <td>true </td>
+        <td>boolean </td>
+       <td> -   </td>
+        <td>是否IP映射</td>
    </tr>
+
    <tr>
-      <td>enableMapping  true boolean  -   是否IP映射</td>
+      <td>ipMapping</td> 
+        <td>false </td>
+        <td>Json  </td>
+        <td>-</td>   
+        <td>-</td>
    </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>ipMapping   false   Json    -    -</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
+ 
 </table>
 
 
@@ -287,33 +339,37 @@ message false  String -   返回具体信息
 
 data   false  String  -  返回具体数据
 
+
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段 </td>  
+      <td>必选  </td>
+      <td>类型  </td>
+      <td>长度限制 </td>
+      <td>说明 </td>
+   </tr>
+
+   <tr>
+      <td>status </td>
+     <td> true   </td>
+      <td>String </td>
+    <td>  1  </td>
+    <td>  成功与失败状态</td>
    </tr>
    <tr>
-      <td></td>
+      <td>message</td>
+      <td>false </td>
+      <td>String</td>
+     <td> -  </td>
+      <td>返回具体信息</td>
    </tr>
+
    <tr>
-      <td>status  true    String   1     成功与失败状态</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>message false  String -   返回具体信息</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>data   false  String  -  返回具体数据</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
+      <td>data </td>
+      <td>false  </td>
+      <td>String </td>
+      <td>-  </td>
+      <td>返回具体数据</td>
    </tr>
 </table>
 
@@ -337,6 +393,28 @@ GET
 参数字段   必选   类型    长度限制   说明 
 {code}    true   String   50   系统编码
 
+
+
+
+<table>
+   <tr>
+      <td>参数字段 </td>  
+      <td>必选  </td>
+      <td>类型  </td>
+      <td>长度限制 </td>
+      <td>说明 </td>
+   </tr>
+
+    <tr>
+      <td>{code}</td>  
+      <td>true  </td>
+      <td>String  </td>
+      <td>50 </td>
+      <td>系统编码</td>
+   </tr>
+</table>
+
+
 #### 返回参数说明 
 
 参数字段   必选   类型    长度限制   说明 
@@ -349,31 +427,34 @@ data   false  String  -  返回具体数据
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段 </td>  
+      <td>必选  </td>
+      <td>类型  </td>
+      <td>长度限制 </td>
+      <td>说明 </td>
+   </tr>
+
+   <tr>
+      <td>status </td>
+     <td> true   </td>
+      <td>String </td>
+    <td>  1  </td>
+    <td>  成功与失败状态</td>
    </tr>
    <tr>
-      <td></td>
+      <td>message</td>
+      <td>false </td>
+      <td>String</td>
+     <td> -  </td>
+      <td>返回具体信息</td>
    </tr>
+
    <tr>
-      <td>status  true    String   1     成功与失败状态</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>message false  String -   返回具体信息</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>data   false  String  -  返回具体数据</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td></td>
+      <td>data </td>
+      <td>false  </td>
+      <td>String </td>
+      <td>-  </td>
+      <td>返回具体数据</td>
    </tr>
 </table>
 
@@ -405,25 +486,34 @@ key   false   String    查询关键字
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段 </td>
+	 <td>必选 </td>
+	 <td>类型  </td>
+	 <td>长度限制  </td>
+	<td> 说明 </td>
    </tr>
+   
    <tr>
-      <td></td>
+      <td>pageIndex</td>   
+      <td>true </td>
+      <td>int </td>
+      <td>-    </td>
+      <td>页数 </td>
    </tr>
+   
    <tr>
-      <td>pageIndex   true   int    -     页数 </td>
+      <td>pageSize</td> 
+      <td>true </td>
+      <td>int  </td>
+      <td>- </td>
+      <td>每页条数</td>
    </tr>
+   
    <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>pageSize  true   int  -  每页条数</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>key   false   String    查询关键字</td>
+      <td>key   </td>
+     <td> false  </td>
+     <td> String  </td>
+     <td> 查询关键字</td>
    </tr>
 </table>
 
@@ -440,28 +530,35 @@ data   false   Json      -    返回数据
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段</td>
+      <td>必选  </td>
+      <td>类型 </td>
+      <td>长度限制</td>
+     <td> 说明 </td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>status</td>  
+     <td> true </td>
+      <td>int </td>
+      <td>-   </td>
+      <td>返回状态</td>
    </tr>
+
    <tr>
-      <td>status  true   int   -   返回状态</td>
+      <td>message</td>
+     <td> false</td>
+     <td> String </td> 
+    <td>  - </td>
+     <td>返回信息</td>
    </tr>
+
    <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>message  false  String   -  返回信息</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>data   false   Json      -    返回数据 </td>
-   </tr>
-   <tr>
-      <td></td>
+      <td>data  </td>
+      <td>false  </td>
+     <td> Json  </td>
+      <td>-    </td>
+      <td>返回数据 </td>
    </tr>
 </table>
 
@@ -489,62 +586,77 @@ sort  Json    -   类别
 first boolean  -   -
 
 <table>
-   <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <tr>
+      <td>参数字段   </td>
+      <td>必选   </td>
+      <td>类型    </td>
+      <td>长度限制  </td>
+      <td>说明  </td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>content </td>
+      <td>false</td>
+  <td>String </td>
+  <td>-   </td>
+  <td>具体内容</td>
    </tr>
+   
    <tr>
-      <td>content  false   String  -   具体内容 </td>
+      <td>last  </td>
+     <td> true  </td>
+     <td> boolean  </td>
+     <td> -  </td>
+    <td>  -</td>
    </tr>
+  
    <tr>
-      <td></td>
+      <td>totalElements  </td>
+     <td> int </td>
+      <td>-  </td>
+    <td>  总共元素</td>
    </tr>
+   
    <tr>
-      <td>last   true   boolean   -   -</td>
+      <td>totalPages</td>
+      <td>int</td>
+      <td>- </td>
+      <td>总页数 </td>
    </tr>
+  
    <tr>
-      <td></td>
+      <td>size </td>
+     <td> int </td>
+    <td>  -   </td>
+     <td> 每页大小  </td>
    </tr>
+  
    <tr>
-      <td>totalElements   int   -   总共元素 </td>
+      <td>number </td>
+     <td> int</td>
+     <td> - </td>
+     <td> 第几页 </td>
    </tr>
+  
    <tr>
-      <td></td>
+      <td>numberOfElements </td>
+     <td> int </td>
+    <td>  -  </td>
+     <td> 元素位置</td>
    </tr>
+   
    <tr>
-      <td>totalPages   int  -   总页数 </td>
+      <td>sort </td>
+      <td>Json</td>
+      <td>-   </td>
+      <td>类别 </td>
    </tr>
+   
    <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>size  int  -    每页大小  </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>number  int  -  第几页 </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>numberOfElements int -   元素位置</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>sort  Json    -   类别 </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>first boolean  -   -</td>
+      <td>first </td>
+      <td>boolean</td> 
+      <td>- </td>  
+      <td>-</td>
    </tr>
 </table>
 
@@ -565,39 +677,51 @@ ascending   true   boolean   -   -
 
 <table>
    <tr>
-      <td>参数字段   必选   类型    长度限制   说明 </td>
+      <td>参数字段   </td>
+      <td>必选   </td>
+      <td>类型    </td>
+      <td>长度限制  </td>
+      <td>说明  </td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>direction </td>
+     <td> true</td>
+      <td>String </td>
+     <td> -    </td>
+      <td>排序方式</td>
    </tr>
+
    <tr>
-      <td>direction  true  String  -    排序方式</td>
+      <td>property </td>
+      <td>true </td>
+      <td>String </td>
+     <td> - </td>
+     <td> -</td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>ignoreCase</td>
+      <td>true </td>
+     <td> boolean</td>  
+     <td> - </td>
+     <td> 忽略大小写</td>
    </tr>
+ 
    <tr>
-      <td>property  true   String -   -</td>
+      <td>nullHandling  </td>
+     <td> true   </td>
+     <td> String</td>
+     <td> -  </td>
+     <td> - </td>
    </tr>
+
    <tr>
-      <td></td>
+      <td>ascending</td>
+  <td>true  </td>
+ <td> boolean</td>
+ <td> - </td> 
+  <td>- </td>
    </tr>
-   <tr>
-      <td>ignoreCase  true  boolean   -  忽略大小写</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>nullHandling   true   String -   - </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-   <tr>
-      <td>ascending   true   boolean   -   - </td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
+
 </table>
