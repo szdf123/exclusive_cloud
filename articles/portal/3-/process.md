@@ -36,7 +36,7 @@
 <tr><td>META-INF</td><td>包信息</td></tr>
 <tr><td>pages</td><td>图片目录</td></tr>
 <tr><td>sso</td><td>单点登录信息</td></tr>
-<tr><td>vendor</td><td>第三方</td><td>js</td><td>库</td></tr>
+<tr><td>vendor</td><td>第三方js库</td></tr>
 <tr><td>WEB-INF</td><td>私有资源目录</td></tr>
 <tr><td>widget</td><td>小部件目录</td></tr>
 <tr><td>tem.xml</td><td>临时文件</td></tr>
