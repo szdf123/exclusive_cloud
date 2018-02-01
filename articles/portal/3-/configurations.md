@@ -14,9 +14,13 @@
 ![](/articles/portal/3-/images/3-c-2.png)
 
 注意：
+
  * 应用服务建议使用 PC Server，数据库服务器建议使用小型机，硬盘使用 SCSI 接口 10000 转以上
+
    * 磁盘或磁盘阵列。
+
  * 表中的 CPU 数量指的是物理核心数，8 核对应为 2Cx4core。
+
  * 规模大于 400 人在线时，请与 UAP 技术支持部协商评估硬件及网络方案。
 
 ### 客户端配置要求 
@@ -29,10 +33,13 @@
 ![](/articles/portal/3-/images/3-c-5.png)
 
 注意：
+
  * IE 的相关设置要求：将 Portal 应用服务器地址加入浏览器“受信任站点”，并将浏览器受信任站点的安全设置为"自定义级别"，启用下载和运行 ActiveX。
+
  * Windows 2008 R2 Server、Windows 7、Windows8 操作系统上运行 Portal 时，需要确保安装正确的网卡驱动，并在 cmd 下运行以下命令：
 
 	 netsh interface tcp set global autotuninglevel=disable
+
 
  * 不推荐使用 Internet Explorer 的网络自动检测设置，取消设置方法为运行“Internet Explorer”，选择工具->intenet 选项->选择“连接”页签->局域网设置，将“自动检测设置”的勾去掉即可。
  
