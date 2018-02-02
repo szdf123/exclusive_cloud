@@ -29,7 +29,7 @@
 
 &lt;groupId&gt;com.yonyou.cloud.middleware&lt;/groupId&gt;
 &lt;artifactId&gt;iris-iuap-support&lt;/artifactId&gt;
-&lt;version&gt;3.0.1-SNAPSHOT&lt;/version&gt;
+&lt;version&gt;3.5.1-RELEASE&lt;/version&gt;
 </pre>
 
 * **上下文参数API使用:**
