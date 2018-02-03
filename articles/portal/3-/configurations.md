@@ -48,7 +48,15 @@ netsh interface tcp set global autotuninglevel=disable
 
 运行"IE8.0"
 
-选择"工具 internet 选项"菜单选择"安全"页签选择"可信任站点"按钮  
+选择"工具" 
+
+internet选项
+
+"菜单"
+
+选择"安全"页签
+
+选择"可信任站点"按钮  
 
 选择”站点”按钮 
 
@@ -59,7 +67,7 @@ netsh interface tcp set global autotuninglevel=disable
 将 ActiveX 控件和插件设置为"Enable"
 
 5.出于安全的目的，请求方式我们只保留了常用的 post 和 get 方式，其余的比如 option、put、delete等已被禁用了。如果做二次开发需要用到这些方式，需要实施做专门的处理
- 
+
 
 6.IE8、Ipad：降级支持,要能保证最终用户正常使用。管理类的复杂功能，尤其设计器类的功能，暂不支持。
 
