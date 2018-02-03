@@ -316,7 +316,7 @@ ipmapping 内容格式
 
 #### 请求方法
 
-/integration/system/delete/jira
+/integration/system/delete/{}
 
 #### 请求方式
 
