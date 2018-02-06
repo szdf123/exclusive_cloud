@@ -91,7 +91,7 @@
     * [视频课程](articles/service/9-/video.md)
   * [最佳实践](articles/service/10-/)
     * [最佳实践](articles/service/10-/practices.md)
-* [应用开发平台](articles/application/)
+* [开发平台](articles/application/)
   * [产品介绍](articles/application/1-/)
     * [产品概述](articles/application/1-/summary.md)
     * [产品优势](articles/application/1-/advantages.md)
